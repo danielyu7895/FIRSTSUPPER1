@@ -91,9 +91,9 @@ export default function Form() {
   return (
     <div className="form">
       <div>
-        <h1>User Registration</h1>
+        <h1 className={"headline"}>Create your account</h1>
       </div>
- 
+
       {/* Calling to the methods */}
       <div className="messages">
         {errorMessage()}
@@ -134,10 +134,13 @@ export default function Form() {
       <input type="checkbox" id="gender" name="v1" value="Male"/>
 
 
+    <button onClick={handleSubmit} className="btn" type="submit">
+       Let's go!
+    </button>
 
-        <button onClick={handleSubmit} className="btn" type="submit">
-          Submit
-        </button>
+    <h4 className= "headline2" >By signing up, I agree to First Supper's Terms & Conditions, Trust and Privacy Policy</h4>
+
+
 
 
       </form>
