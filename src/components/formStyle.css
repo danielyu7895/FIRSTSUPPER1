@@ -1,61 +1,88 @@
-  .form {
-      text-align: center;
-      background-color:green;
-    }
+/*.body  {*/
+/*  background-image: ;*/
+/*}*/
+
+.form {
+  text-align: center;
+  background-image:
+          url(
+          "https://res.cloudinary.com/grohealth/image/upload/f_auto,fl_lossy,q_auto/v1583749915/DCUK/Content/iStock-879690980.jpg");
+  height: 100%;
+  backgroundSize: 'cover',
+
+}
 
 
-  .label{
-    display: block;
-    font-size: larger;
-    color: red;
-    padding: 5px;
-  }
+.label{
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px;
+  border-radius: 30px;
+  font-family: Helvetica, sans-serif;
+}
 
 
-  .checkbox{
-    display: inline-block;
-    font-size: medium;
-    position: relative;
-    color: white;
-    padding: 5px;
-  }
+.checkbox{
+  display: inline-block;
+  font-size: medium;
+  position: relative;
+  color: black;
+  padding: 5px;
+}
 
 
-  .input{
-    font-size: larger;
-    padding: 5px;
-    margin: 2px;
+.input{
+  font-size: larger;
+  padding: 5px;
+  margin: 2px;
 
-  }
-  .btn{
-    color: white;
-    background-color: red;
-    border-radius: 5px;
-    font-size: larger;
-    display: block;
-    padding: 5px;
-    margin: 10px auto;
-  }
+}
+.btn{
+  color: white;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  font-size: larger;
+  display: block;
+  padding: 5px;
+  margin: 10px auto;
+}
 
-  .messages{
-    display: flex;
-    justify-content: center;
-  }
+.messages{
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+}
 
-  .error{
-    display: block;
-    background-color: red;
-    color: white;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
-  }
+.error{
+  display: block;
+  background-color: red;
+  font-family: "Helvetica";
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
 
-  .success{
-    display: block;
-    background-color: lightblue;
-    color: black;
-    width: fit-content;
-    height: 50px;
-    padding: 5px;
-  }
+.success{
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+
+.headline{
+  color: black;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+
+}
+
+.headline2{
+  color: lightgray;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
