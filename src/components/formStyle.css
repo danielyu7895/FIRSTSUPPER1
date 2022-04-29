@@ -1,14 +1,7 @@
-/*.body  {*/
-/*  background-image: ;*/
-/*}*/
-
 .form {
   text-align: center;
-  background-image:
-          url(
-          "https://res.cloudinary.com/grohealth/image/upload/f_auto,fl_lossy,q_auto/v1583749915/DCUK/Content/iStock-879690980.jpg");
+  background-color: rgba(178,181,255,0.23);
   height: 100%;
-  backgroundSize: 'cover',
 
 }
 
@@ -20,6 +13,21 @@
   padding: 5px;
   border-radius: 30px;
   font-family: Helvetica, sans-serif;
+  font-style: oblique;
+  margin: 8px;
+
+}
+
+.label2{
+  display: block;
+  font-size: larger;
+  color: black;
+  padding: 5px 20px;
+  border-radius: 30px;
+  font-family: Helvetica, sans-serif;
+  font-style: oblique;
+  margin: 10px;
+
 }
 
 
@@ -44,20 +52,22 @@
   border-radius: 5px;
   font-size: larger;
   display: block;
-  padding: 5px;
-  margin: 10px auto;
+  padding: 10px 10px;
+  margin: 25px auto;
+
 }
 
 .messages{
   display: flex;
   justify-content: center;
   font-family: Helvetica, sans-serif;
+  padding: 20px;
 }
 
 .error{
   display: block;
-  background-color: red;
-  font-family: "Helvetica";
+  background-color: rgba(57,57,125,0.89);
+  font-family: Helvetica, sans-serif;
   color: white;
   width: fit-content;
   height: 50px;
@@ -85,4 +95,21 @@
   color: lightgray;
   text-align: center;
   font-family: Helvetica, sans-serif;
+  margin: 5px;
+  padding: 40px;
+}
+
+.headline2{
+  color: rgba(41,41,40,0.8);
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: xx-small;
+  margin: 5px;
+  padding: 40px;
+}
+
+.label3{
+  margin: 20px;
+  font-family: Helvetica, sans-serif;
+
 }
