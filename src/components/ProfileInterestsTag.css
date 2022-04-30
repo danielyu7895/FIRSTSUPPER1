@@ -1,0 +1,6 @@
+.profile-interests-tag {
+    background: whitesmoke;
+}
+.profile-interests-tag.active{
+    background: teal;
+}
