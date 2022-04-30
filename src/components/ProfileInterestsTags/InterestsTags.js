@@ -1,7 +1,7 @@
 import ProfileInterestsTag from "./InterestsTag";
 
 
-const tags = require('C:\\Users\\noamb\\WebstormProjects\\FirstSupper\\src\\Interests.json')
+const tags = require('C:\\Users\\noamb\\WebstormProjects\\FirstSupper\\src\\components\\ProfileInterestsTags\\Interests.json')
 
 function ProfileInterestsTags() {
     return (
