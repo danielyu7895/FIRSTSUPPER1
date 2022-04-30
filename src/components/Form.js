@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import "./formStyle.css";
-import UploadImg from './upload_image';
+import UploadImg from './uploadImage';
 export default function Form() {
 
 
@@ -149,7 +149,7 @@ export default function Form() {
 
 
     <h3 className={"label3"}>Upload Image</h3>
-     <div className='upload-img'>
+     <div className='uploadImg'>
        <UploadImg />
      </div>
 
