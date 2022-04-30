@@ -1,16 +1,20 @@
 import { useState } from 'react';
 import "./formStyle.css";
+import UploadImg from './uploadImage';
 export default function Form() {
- 
+
+
   // States for registration
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [age, setAge] = useState('');
+  const [birthdate, setDate] = useState('');
   const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
- 
-  // States for checking the errors
+
+
+
+        // States for checking the errors
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
  
@@ -32,12 +36,12 @@ export default function Form() {
 	  setSubmitted(false);
   };
 
-  // Handling the age change
-  const handleAge = (e) => {
-      setAge(e.target.value);
+  // Handling the birthdate change
+  const handleDate = (e) => {
+      setDate(e.target.value);
       setSubmitted(false);
     };
- 
+
   // Handling the email change
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -50,11 +54,11 @@ export default function Form() {
     setSubmitted(false);
   };
 
- 
+
   // Handling the form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (firstName === '' ||lastName === ''|| age === ''|| address === '' || email === '' || password === '') {
+    if (firstName === '' ||lastName === ''|| birthdate === ''|| address === '' || email === '' || password === '') {
       setError(true);
     } else {
       setSubmitted(true);
@@ -70,7 +74,7 @@ export default function Form() {
         style={{
           display: submitted ? '' : 'none',
         }}>
-        <h1>User {firstName} successfully registered!!</h1>
+        <h1>User {firstName} successfully registered!</h1>
       </div>
     );
   };
@@ -91,9 +95,10 @@ export default function Form() {
   return (
     <div className="form">
       <div>
-        <h1>User Registration</h1>
+          <br/>
+          <h1 className={"headline"}>Create your account</h1>
       </div>
- 
+
       {/* Calling to the methods */}
       <div className="messages">
         {errorMessage()}
@@ -102,45 +107,66 @@ export default function Form() {
  
       <form>
         {/* Labels and inputs for form data */}
-        <label className="label">First Name</label>
+        <label className="label">First Name *</label>
         <input onChange={handleFirstName} className="input"
           value={firstName} type="text" />
 
-        <label className="label">Last Name</label>
+        <label className="label">Last Name *</label>
         <input onChange={handleLastName} className="input"
           value={lastName} type="text" />
- 
-        <label className="label">Age</label>
-        <input onChange={handleAge} className="input"
-          value={age} type="text" />
 
-      <label className="label">Address</label>
-		  <input onChange={handleAddress} className="input"
-		    value={address} type="address" />
+       <label className="label">Date of Birth *</label>
+       <input onChange={handleDate} className="input"
+          value={birthdate} type="date"/>
 
-        <label className="label">Email</label>
+      <label className="label">Address *</label>
+      <input onChange={handleAddress} className="input"
+		   value={address} type="address" />
+
+        <label className="label">Email *</label>
         <input onChange={handleEmail} className="input"
           value={email} type="email" />
  
-        <label className="label">Password</label>
+        <label className="label">Password *</label>
         <input onChange={handlePassword} className="input"
           value={password} type="password" />
 
-      
-      <label className = "label">Gender</label>
-      <label className="checkbox">Female</label>
-      <input type="checkbox" id="gender" name="v1" value="Female"/>
-      <label className="checkbox">Male</label>
-      <input type="checkbox" id="gender" name="v1" value="Male"/>
+
+      {/*<label className = "label">Gender *</label>*/}
+      {/*<label className="checkbox">Female</label>*/}
+      {/*<input type="checkbox" id="gender" name="v1" value="Female"/>*/}
+      {/*<label className="checkbox">Male</label>*/}
+      {/*<input type="checkbox" id="gender" name="v1" value="Male"/>*/}
+       <br/>
+       <label className={"label2"} htmlFor="Gender">Gender</label>
+       <select id="gender" name="gender">
+           <option value="Female">Female</option>
+           <option value="Male">Male</option>
+        </select>
+
+    <br/>
+    <br/>
 
 
+    <h3 className={"label3"}>Upload Image</h3>
+     <div className='uploadImg'>
+       <UploadImg />
+     </div>
 
-        <button onClick={handleSubmit} className="btn" type="submit">
-          Submit
-        </button>
+
+          <br/>
+    <button onClick={handleSubmit} className="btn" type="submit">
+       Let's go!
+    </button>
+
+
+    <h4 className= "headline2" >
+        By signing up, I agree to First Supper's Terms & Conditions, Trust and Privacy Policy.</h4>
+
 
 
       </form>
     </div>
   );
 }
+
