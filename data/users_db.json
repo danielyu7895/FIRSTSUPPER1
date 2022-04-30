@@ -1,0 +1,64 @@
+{
+  "users":[
+     {
+        "id":1,
+        "first_name":"Leanne",
+        "last_name":"Graham",
+        "full_name":"Leanne Graham",
+        "email":"leanne.graham@mail.huji.ac.il",
+        "password":"12345",
+        "date_of_birth":"08-07-1995",
+        "address":{
+           "street":"Narkis",
+           "neighborhood":"Rehavia"
+        },
+        "phone":"0504777851",
+        "institute":{
+           "name":"The Hebrew University Of Jerusalem",
+           "major":"Mathematics",
+           "year":"1"
+        },
+        "mindset":{
+           "comes_for":"new in town",
+           "into":"good converstion",
+           "more":"limud session"
+        },
+        "preferences":{
+           "kosher":"y",
+           "vegetarian":"n",
+           "vegan":"n",
+           "shomer_shabat":"n"
+        }
+     },
+     {
+        "id":2,
+        "first_name":"Ervin",
+        "last_name":"Howell",
+        "full_name":"Ervin Howell",
+        "email":"Ervin.Howell@bezalel.ac.il",
+        "password":"12345",
+        "date_of_birth":"08-07-1996",
+        "address":{
+           "street":"Narkis",
+           "neighborhood":"Nahlaot"
+        },
+        "phone":"0504777852",
+        "institute":{
+           "name":"Bezalel Academy of Arts and Design Jerusalem",
+           "major":"Industrial Design",
+           "year":"2"
+        },
+        "mindset":{
+           "comes_for":"meet new friends",
+           "into":"chill and fun",
+           "more":"jem session"
+        },
+        "preferences":{
+           "kosher":"n",
+           "vegetarian":"y",
+           "vegan":"n",
+           "shomer_shabat":"n"
+        }
+     }
+  ]
+}
