@@ -22,8 +22,28 @@
     "content": "Dancing"},
 
   {"id": "8",
-    "content": "Singing"}
+    "content": "Singing"},
 
+  {"id": "9",
+    "content": "Gaming"},
+
+  {"id": "10",
+    "content": "Reading"},
+
+  {"id": "11",
+    "content": "Gardening"},
+
+  {"id": "12",
+    "content": "Politics / News"},
+
+  {"id": "13",
+    "content": "Wine Tasting"},
+
+  {"id": "14",
+    "content": "Board Games"},
+
+  {"id": "15",
+    "content": "Astronomy"}
 
 
 ]

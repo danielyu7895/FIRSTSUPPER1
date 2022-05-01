@@ -1,6 +1,19 @@
 .profile-interests-tag {
+    display: inline-block;
+    height: 35px;
+    align-content: center;
     background: whitesmoke;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    border: 2px solid #008CBA;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 40px;
+
+
 }
+
 .profile-interests-tag.active{
-    background: teal;
+    background:  #008CBA;
 }
