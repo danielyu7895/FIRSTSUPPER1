@@ -1,7 +1,7 @@
 import InterestButton from "./InterestButton";
 import React from "react";
 /* eslint-disable */
-const sportTags = require('./interests/Sport.json')
+const sportTags = require('../interests/Sport.json')
 
 function SignUpInterests() {
     return (

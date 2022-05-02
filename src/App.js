@@ -12,6 +12,7 @@ import SignUpForm from "./Pages/SignUpForm";
 import Home from "./Pages/Home";
 import Footer from "./Components/Footer";
 import SignUpForm2 from "./Pages/SignUpForm2";
+import Profile from "./Pages/Profile";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path='/' exact component={Home} />
                 <Route path='/SignUpForm' component={SignUpForm} />
                 <Route path='/SignUpForm2' component={SignUpForm2} />
+                <Route path='/Profile' component={Profile} />
                 {/*<Route path='/contact-us' component={Contact} />*/}
                 {/*<Route path='/sign-up' component={SignUp} />*/}
             </Switch>
