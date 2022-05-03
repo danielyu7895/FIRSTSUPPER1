@@ -47,6 +47,9 @@ function Navbar() {
                     <li>
                         <Link to="/">Host a Meal</Link>
                     </li>
+                    <li>
+                        <Link to="./profile">Profile</Link>
+                    </li>
                 </ul>
             </div>
         </nav>
