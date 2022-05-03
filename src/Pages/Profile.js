@@ -1,6 +1,7 @@
 // import SignUpInterests from "../Components/SignUpInterests";
 import "../Styles/Profile.css"
 import React from "react";
+import Tag from "../Components/Tag";
 
 export default function Profile() {
     return (
@@ -12,7 +13,7 @@ export default function Profile() {
                         className="absolute top-0 w-full h-full bg-center bg-cover"
                         style={{
                             backgroundImage:
-                                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+                                "url('https://www.tyla.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.tyla.com%2Fs3%2Fcontent%2Fe04e37f35f584ef45a1658daba72cdd5.png')",
                         }}
                     >
             <span
@@ -49,48 +50,18 @@ export default function Profile() {
                                         <div className="relative">
                                             <img
                                                 alt="..."
-                                                // src={require("https://www.assignnmentinneed.com/wp-content/uploads/2020/10/successful-college-student-lg.png").default}
                                                 src = "https://www.assignnmentinneed.com/wp-content/uploads/2020/10/successful-college-student-lg.png"
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                             />
                                         </div>
                                     </div>
                                     <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
-                                        {/*<div className="py-6 px-3 mt-32 sm:mt-0">*/}
-                                        {/*    <button*/}
-                                        {/*        className="bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"*/}
-                                        {/*        type="button"*/}
-                                        {/*    >*/}
-                                        {/*        Connect*/}
-                                        {/*    </button>*/}
-                                        {/*</div>*/}
                                     </div>
                                     <div className="w-full lg:w-4/12 px-4 lg:order-1">
                                         <div className="flex justify-center py-4 lg:pt-4 pt-8">
                                             <div className="mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          22
-                        </span>
-                                                <span className="text-sm text-blueGray-400">
-                          Friends
-                        </span>
+
                                             </div>
-                        {/*                    <div className="mr-4 p-3 text-center">*/}
-                        {/*<span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">*/}
-                        {/*  10*/}
-                        {/*</span>*/}
-                        {/*                        <span className="text-sm text-blueGray-400">*/}
-                        {/*  Photos*/}
-                        {/*</span>*/}
-                        {/*                    </div>*/}
-                        {/*                    <div className="lg:mr-4 p-3 text-center">*/}
-                        {/*<span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">*/}
-                        {/*  89*/}
-                        {/*</span>*/}
-                        {/*                        <span className="text-sm text-blueGray-400">*/}
-                        {/*  Comments*/}
-                        {/*</span>*/}
-                        {/*                    </div>*/}
                                         </div>
                                     </div>
                                 </div>
@@ -98,39 +69,40 @@ export default function Profile() {
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                         Omer Dahan
                                     </h3>
-                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
+                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold ">
                                         <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
                                         Rehavia, Jerusalem
                                     </div>
-                                    {/*<div className="mb-2 text-blueGray-600 mt-10">*/}
-                                    {/*    <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>*/}
-                                    {/*    Solution Manager - Creative Tim Officer*/}
-                                    {/*</div>*/}
+
                                     <div className="mb-2 text-blueGray-600">
                                         <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                                        Law Student
+                                        Law Student at The Hebrew Univerity
                                     </div>
                                 </div>
                                 <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-9/12 px-4">
                                             <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
-                                                “Good things come to people who wait, but better things come to
-                                                those who go out and get them.”
-                                                <br/>
-                                                <br/>
-                                                TAGS
-
+                                                About Me
                                             </p>
-                                            {/*<a*/}
-                                            {/*    href="#pablo"*/}
-                                            {/*    className="font-normal text-lightBlue-500"*/}
-                                            {/*    onClick={(e) => e.preventDefault()}*/}
-                                            {/*>*/}
-                                            {/*    Show more*/}
-                                            {/*</a>*/}
+                                            <p>
+                                                I'm a professional dancer for over 10 years. When I'm not dancing, I'm Swimming or painting. In addition to all that I'm doing my best trying to be a diligent student.
+                                            </p>
                                         </div>
-                                    </div>
+                                </div>
+                                    <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+                                        <div className="flex flex-wrap justify-center">
+                                            <div className="w-full lg:w-9/12 px-4">
+                                                <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+                                                    My Interests
+                                                </p>
+                                                <p>
+                                                    <Tag name="Basketball"/><Tag name="Dancing"/><Tag name="Swimming"/><Tag name="Cinema"/><Tag name="Drawing"/>
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                </div>
                                 </div>
                             </div>
                         </div>

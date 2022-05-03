@@ -3,6 +3,7 @@ import "../Styles/SignUpForm.css";
 import React from "react";
 import UploadImg from '../Components/uploadImage';
 import {Link} from "react-router-dom";
+import {TextField} from "@mui/material";
 
 /* eslint-disable */
 function SignUpForm() {
@@ -120,6 +121,7 @@ function SignUpForm() {
  
       <form>
         {/* Labels and inputs for form data */}
+          <TextField id="standard-basic" label="Name" variant="standard" />
         <label className="label">First Name *</label>
         <input onChange={handleFirstName} className="input"
           value={firstName} type="text" />

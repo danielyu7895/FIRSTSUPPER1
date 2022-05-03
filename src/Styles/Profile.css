@@ -1501,6 +1501,9 @@ select {
 .font-bold {
     font-weight: 700;
 }
+.font-bold-more{
+    font-weight: 1000;
+}
 
 .h-0 {
     height: 0px;
