@@ -136,6 +136,7 @@ export default function EventPage() {
                                                 <br/>
                                                 Guest List: Tomer Lev, Eden Hadar, Michal Cohen, Lian Rozenberg, Eran Peleg
                                             </p>
+                                            <h4>Hello</h4>
                                             {/* <a
                         href="#pablo"
                         className="font-normal text-lightBlue-500"
