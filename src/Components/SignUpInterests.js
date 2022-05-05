@@ -1,13 +1,13 @@
 import InterestButton from "./InterestButton";
 import React from "react";
 /* eslint-disable */
-const sportTags = require('../interests/Sport.json')
+const tags = require('./Interests.json')
 
 function SignUpInterests() {
     return (
         <div className='profile-interests-tags'>
             {tags.map((tag, id) => (
-                <InterestButton key={id}>{sportTags.content}</InterestButton>
+                <InterestButton key={id}>{tag.content}</InterestButton>
             ))}
         </div>
     )
