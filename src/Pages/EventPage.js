@@ -131,7 +131,7 @@ export default function EventPage() {
                                             <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
                                                 Let's enjoy a happy family traditional shabbat meal.
                                                 <br/>
-                                                Nice food, traditional Shabbat songs, and great Israeli vibes!
+                                                Nice food, traditional Shabbat songs and great Israeli vibes!
                                                 <br/>
                                                 <br/>
                                                 Guest List: Tomer Lev, Eden Hadar, Michal Cohen, Lian Rozenberg, Eran Peleg
