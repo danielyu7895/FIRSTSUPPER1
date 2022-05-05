@@ -13,7 +13,7 @@ export default function Profile() {
                         className="absolute top-0 w-full h-full bg-center bg-cover"
                         style={{
                             backgroundImage:
-                                "url('https://www.tyla.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.tyla.com%2Fs3%2Fcontent%2Fe04e37f35f584ef45a1658daba72cdd5.png')",
+                                "url('https://cdn9.dissolve.com/p/D187_257_003/D187_257_003_1200.jpg')",
                         }}
                     >
             <span
@@ -82,7 +82,7 @@ export default function Profile() {
                                 <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                                     <div className="flex flex-wrap justify-center">
                                         <div className="w-full lg:w-9/12 px-4">
-                                            <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+                                            <p className="mb-4 font-bold text-lg leading-relaxed text-blueGray-600">
                                                 About Me
                                             </p>
                                             <p>
@@ -93,10 +93,11 @@ export default function Profile() {
                                     <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                                         <div className="flex flex-wrap justify-center">
                                             <div className="w-full lg:w-9/12 px-4">
-                                                <p className="mb-4 text-lg leading-relaxed text-blueGray-700">
+                                                <p className="mb-4 font-bold text-lg leading-relaxed text-blueGray-600">
                                                     My Interests
                                                 </p>
                                                 <p>
+                                                    <br/>
                                                     <Tag name="Baseball"/><Tag name="Dancing"/><Tag name="Swimming"/><Tag name="Cinema"/><Tag name="Drawing"/>
 
                                                 </p>
