@@ -17,6 +17,7 @@ import SignUpForm2 from "./Pages/SignUpForm2";
 import Profile from "./Pages/Profile";
 import Settings from "./Pages/Settings";
 import YourEvents from "./Pages/YourEvents";
+import EventPage from "./Pages/EventPage";
 
 function App() {
     return (
@@ -27,7 +28,7 @@ function App() {
                 <Route path='/SignUpForm' component={SignUpForm} />
                 <Route path='/SignUpForm2' component={SignUpForm2} />
                 <Route path='/Profile' component={Profile} />
-                <Route path='/Settings' component={Settings} />
+                <Route path='/Settings' component={EventPage} />
                 <Route path='/YourEvents' component={YourEvents} />
             </Switch>
             <Footer/>
