@@ -97,7 +97,7 @@ export default function Profile() {
                                                     My Interests
                                                 </p>
                                                 <p>
-                                                    <Tag name="Basketball"/><Tag name="Dancing"/><Tag name="Swimming"/><Tag name="Cinema"/><Tag name="Drawing"/>
+                                                    <Tag name="Baseball"/><Tag name="Dancing"/><Tag name="Swimming"/><Tag name="Cinema"/><Tag name="Drawing"/>
 
                                                 </p>
                                             </div>
