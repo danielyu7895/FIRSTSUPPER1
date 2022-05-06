@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // components
-import Navbar from "src/Components/Navbar.js";
-import Footer from "src/Components/Footer.js";
+
 import Tag from "../Components/Tag";
 
 // page content

@@ -43,21 +43,13 @@ export default function YourEvents() {
         <div className="relative py-16 bg-blueGray-200">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap">
-              <EventCard/>
-              
-//               example how to modify stat of EventCard
-              <EventCard
-              statTitle="title example"/>
-              <EventCard/>
-              <EventCard/>
-              <EventCard/>
-              <EventCard/>
-              <EventCard/>
-              <EventCard/>
 
-              
-
-
+              <EventCard/>
+              <EventCard/>
+              <EventCard/>
+              <EventCard/>
+              <EventCard/>
+              <EventCard/>
             </div>
         </div>
 

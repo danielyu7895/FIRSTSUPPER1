@@ -16,7 +16,8 @@ import Footer from "./Components/Footer";
 import SignUpForm2 from "./Pages/SignUpForm2";
 import Profile from "./Pages/Profile";
 import Settings from "./Pages/Settings";
-import YourEvents from "./Pages/YourEvents";
+import YourEvents from "./newPages/YourEvents";
+import JoinEvent from "./newPages/JoinEvent";
 import EventPage from "./Pages/EventPage";
 
 function App() {
@@ -28,8 +29,11 @@ function App() {
                 <Route path='/SignUpForm' component={SignUpForm} />
                 <Route path='/SignUpForm2' component={SignUpForm2} />
                 <Route path='/Profile' component={Profile} />
-                <Route path='/Settings' component={EventPage} />
-                <Route path='/YourEvents' component={YourEvents} />
+                {/*<Route path='/Settings' component={EventPage} />*/}
+                {/*<Route path='/YourEvents' component={YourEvents} />*/}
+                <Route path='/FindDinner' component={YourEvents} />
+                <Route path='/EventPage' component={EventPage} />
+                <Route path='/JoinEvent' component={JoinEvent} />
             </Switch>
             <Footer/>
         </Router>

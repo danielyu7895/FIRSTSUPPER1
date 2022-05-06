@@ -1,6 +1,7 @@
 import "../Styles/EvenPage.css"
 import React from "react";
 import Tag from "../Components/Tag";
+import {Link} from "react-router-dom";
 
 
 export default function EventPage() {
@@ -149,13 +150,7 @@ export default function EventPage() {
                                                 <Tag name="Singing"/><Tag name="Football"/><Tag name="Dancing"/><Tag name="Reading"/><Tag name="Wine Testing"/>
 
                                             </div>
-                                            {/* <a
-                        href="#pablo"
-                        className="font-normal text-lightBlue-500"
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        Show more
-                      </a> */}
+                                            <Link to="/JoinEvent" className="font-bold text-blueGray-700 mt-8">more info</Link>
                                         </div>
                                     </div>
                                 </div>

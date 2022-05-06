@@ -5,7 +5,7 @@ import React from "react";
 function Footer() {
   return (
       <footer className='Footer'>
-          <p>Copyright 2021 ShishiTogether </p>
+          <p>Copyright 2022 First Supper </p>
       </footer>
   );
 }
