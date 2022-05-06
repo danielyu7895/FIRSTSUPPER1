@@ -1,17 +1,14 @@
-// import React from "react";
+// main feed of events
 
-// function YourEvents(){
-
-// }
-
-// export default YourEvents;
 import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Profile.css";
-import Tabs from "../Components/Tabs/filerTabs";
-import EventsHeader from "../Components/EventsHeader";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+// components
+
 import EventCard from "../Components/Cards/EventCard";
+import EventsHeader from "../Components/EventsHeader";
+
 
 
 // components
@@ -20,10 +17,7 @@ export default function YourEvents() {
   return (
       <main>
         <div className="relative block h-500-px">
-        {/* eventsHeader */}
           <EventsHeader/>
-        {/* <Tabs for filters (all koasger..)/> */}
-          {/* <FilterSample/> */}
         </div>
         <div className="relative mx-auto">
             <div className="justify-center flex flex-wrap">
@@ -47,10 +41,13 @@ export default function YourEvents() {
           </div>  
          {/*non static element - preasents the events  */}
 
+
         <div className="relative py-16 bg-blueGray-200">
           <div className="container px-4 mx-auto">
             <div className="flex flex-wrap">
               <EventCard/>
+              
+//               example how to modify stat of EventCard
               <EventCard
               statTitle="title example"/>
               <EventCard/>
