@@ -11,8 +11,6 @@ import EventsHeader from "../Components/EventsHeader";
 
 
 
-// components
-
 export default function YourEvents() {
   return (
       <main>
