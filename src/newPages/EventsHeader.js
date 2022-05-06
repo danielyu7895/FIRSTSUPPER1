@@ -1,3 +1,7 @@
+// not finished yet!!
+// need to be in components folder
+// used in EventPage.js
+
 import React from 'react'
 import "../Styles/Profile.css"
 
