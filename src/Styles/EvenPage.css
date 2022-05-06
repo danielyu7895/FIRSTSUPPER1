@@ -1111,6 +1111,15 @@ select {
     --tw-bg-opacity: 1;
     background-color: rgba(233, 213, 255, var(--tw-bg-opacity));
 }
+.bg-purple-dark {
+    --tw-bg-opacity: 1;
+    background-color: rgba(161, 102, 133, 1);
+}
+.bg-purple-bright {
+    --tw-bg-opacity: 1;
+    background-color: rgba(212, 175, 195, 1);
+}
+
 
 .bg-purple-500 {
     --tw-bg-opacity: 1;
@@ -2366,6 +2375,11 @@ select {
 .text-pink-400 {
     --tw-text-opacity: 1;
     color: rgba(244, 114, 182, var(--tw-text-opacity));
+}
+
+.text-purple-dark {
+    --tw-text-opacity: 1;
+    color: rgba(161, 102, 133, 1);
 }
 
 .text-lightBlue-300 {

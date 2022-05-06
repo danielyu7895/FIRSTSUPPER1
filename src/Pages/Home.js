@@ -10,14 +10,16 @@ function Home() {
         <>
 
             {/*First section*/}
-            <section className="header relative items-center flex h-screen max-h-860-px">
+            <section className="header relative items-center flex h-screen max-h-860-px backgroundHome">
                 <div className="container mx-auto items-center flex flex-wrap">
                     <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
                         <div className="pt-32 sm:pt-0">
-                            <h2 className="font-semibold text-4xl text-blueGray-600">
-                                First Supper - Let the journey begin.
+                            <h2 className="font-bold text-4xl text-custom">
+                                First Supper - Meet ● Eat ● Repeat
+
+
                             </h2>
-                            <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
+                            <p className="font-semibold mt-4 text-lg leading-relaxed text-custom">
                                 First Supper blallqwdlefleflel;flr;fr;;r;f;krfk
                                 frnfnrekfrjjrkgjkrjgkrjkgkrfkrkfnkrngkrnknrknf
                                 rvrmkgrkkrkngkrnkngknrkgnkngknkgnkrnknrngrnnfrk
@@ -27,9 +29,9 @@ function Home() {
                             <div className="mt-12">
                                 <Link to="/FindDinner"
                                           // target="_self"
-                                          className="about-the-app text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-lightBlue-500 active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                                          className="about-the-app text-custom font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-purple-dark active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                                 >
-                                    Find a Dinner
+                                    Let's Get Started
                                 </Link>
                                 {/*<HashLink to="#about-us-home"*/}
                                 {/*          className="about-us ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blueGray-700 active:bg-blueGray-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"*/}

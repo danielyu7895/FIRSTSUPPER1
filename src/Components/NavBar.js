@@ -78,7 +78,7 @@ export default function Navbar(props) {
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                         <Link
                             to="/"
-                            className="text-blueGray-700 text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                            className="text-purple-dark text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
                         >
                             First Supper
                         </Link>
@@ -106,15 +106,15 @@ export default function Navbar(props) {
 
                             <li className="flex items-center">
                                 <a
-                                    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="/"
                                 >
-                                    <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
+                                    <i className="ttext-purple-dark far text-lg leading-lg mr-2" />{" "}
                                     Home
                                 </a>
 
                                 <a
-                                    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="/HostDinner"
                                 >
                                     <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
@@ -123,7 +123,7 @@ export default function Navbar(props) {
 
 
                                 <a
-                                    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="/FindDinner"
                                 >
                                     <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
