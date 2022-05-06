@@ -1,3 +1,7 @@
+// not finished yet!!
+// need to be in components folder, in new folder coled Cards
+// used in EventPage.js
+
 import React from 'react'
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
