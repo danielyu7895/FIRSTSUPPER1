@@ -52,14 +52,15 @@ export default function EventPage() {
                                                 alt="..."
                                                 // src={require("assets/img/team-2-800x800.jpg").default}
                                                 src = "https://img2.ad.co.il/NadlanSaleImages/1696349_0.jpg"
-                                                className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-210-px"
+                                                style={{width: 210, height: 210, borderRadius: 210/ 2}}
+                                                className="shadow-xl rounded h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-210-px"
                                             />
                                         </div>
                                     </div>
                                     <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                         <div className="py-6 px-3 mt-32 sm:mt-0">
                                              <button>
-                                                 <Link to="/JoinEvent" className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>
+                                                 <Link to="/JoinEvent" className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>
 
                       </button>
 
@@ -73,7 +74,7 @@ export default function EventPage() {
                         </span>
                                                 <span className="text-sm text-blueGray-400">
                                                     <br/>
-                        Number of Guests
+                        Guests
                         </span>
                                             </div>
                                             <div className="mr-4 p-3 text-center">
@@ -111,21 +112,21 @@ export default function EventPage() {
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                         Traditional Shabbat Dinner
                                     </h3>
-                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
                                         Sderot Ben Maimon, Rehavia
                                     </div>
-                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         {/* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "} */}
-                                        Date: 20/05 - 19:00
+                                        Friday 20/05/22 at 19:00
                                     </div>
-                                    {/* <div className="mb-2 text-blueGray-600 mt-10">
+                                    {/* <div className="mb-4 text-blueGray-600 mt-10">
                     <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
                     Solution Manager - Creative Tim Officer
                   </div> */}
-                                    <div className="mb-2 font-bold text-blueGray-400">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         {/* <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                                        Host by: Amit Lahav
+                                        Hosted by Amit Lahav
                                     </div>
                                 </div>
                                 <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
@@ -139,20 +140,27 @@ export default function EventPage() {
                                                 <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                                                     <h4 className= "font-bold text-blueGray-600">Guest List </h4>
                                                     <br/>
-                                                Tomer Lev, Eden Hadar, Michal Cohen, Lian Rozenberg, Eran Peleg
+                                                    Tomer Lev
+                                                    <br/>
+                                                    Eden Hadar
+                                                    <br/>
+                                                    Michal Cohen
+                                                    <br/>
+                                                    Lian Rozenberg
+                                                    <br/>
+                                                    Eran Peleg
                                                 </div>
                                             </p>
                                             <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                                                 <h4 className= "font-bold text-blueGray-600"> Our Common Interests
                                                 </h4>
                                                 <br/>
-                                                <Tag name="Singing"/><Tag name="Football"/><Tag name="Dancing"/><Tag name="Reading"/><Tag name="Wine Testing"/>
+                                                <Tag name="Singing"/><Tag name="Football"/><Tag name="Dancing"/><Tag name="Reading"/><Tag name="Wine Tasting"/>
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

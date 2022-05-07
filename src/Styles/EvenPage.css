@@ -2382,6 +2382,11 @@ select {
     color: rgba(161, 102, 133, 1);
 }
 
+.text-purple-light {
+    --tw-text-opacity: 1;
+    color: rgba(212, 175, 195, 1);
+}
+
 .text-lightBlue-300 {
     --tw-text-opacity: 1;
     color: rgba(125, 211, 252, var(--tw-text-opacity));

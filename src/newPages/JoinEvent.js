@@ -54,6 +54,7 @@ export default function JoinEvent() {
                                                 alt="..."
                                                 // src={require("assets/img/team-2-800x800.jpg").default}
                                                 src = "https://img2.ad.co.il/NadlanSaleImages/1696349_0.jpg"
+                                                style={{width: 210, height: 210, borderRadius: 210/ 2}}
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-210-px"
                                             />
                                         </div>
@@ -76,7 +77,7 @@ export default function JoinEvent() {
                         </span>
                                                 <span className="text-sm text-blueGray-400">
                                                     <br/>
-                        Number of Guests
+                        Guests
                         </span>
                                             </div>
                                             <div className="mr-4 p-3 text-center">
@@ -114,11 +115,11 @@ export default function JoinEvent() {
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                         Traditional Shabbat Dinner
                                     </h3>
-                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
-                                        Rehavia, Israel
+                                        Sderot Ben Maimon, Rehavia
                                     </div>
-                                    <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         {/* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "} */}
                                         Friday 20/05/22 at 19:00
                                     </div>
@@ -126,9 +127,9 @@ export default function JoinEvent() {
                     <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
                     Solution Manager - Creative Tim Officer
                   </div> */}
-                                    <div className="mb-2 font-bold text-blueGray-400">
+                                    <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         {/* <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i> */}
-                                        Hosted by: Amit Lahav
+                                        Hosted by Amit Lahav
                                     </div>
                                 </div>
 
@@ -201,7 +202,7 @@ export default function JoinEvent() {
                                                     <input
                                                         type="text"
                                                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                                        defaultValue="Lucky"
+                                                        defaultValue=""
                                                     />
                                                 </div>
                                             </div>
@@ -216,13 +217,13 @@ export default function JoinEvent() {
                                                     <input
                                                         type="text"
                                                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                                        defaultValue="Jesse"
+                                                        defaultValue=""
                                                     />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="text-center mt-12">
-                                            <button className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                            <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                                                 Join
                                             </button>
                                         </div>
