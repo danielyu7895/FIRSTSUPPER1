@@ -35,7 +35,6 @@ function App() {
                 <Route path='/EventPage' component={EventPage} />
                 <Route path='/JoinEvent' component={JoinEvent} />
             </Switch>
-            <Footer/>
         </Router>
     );
 }

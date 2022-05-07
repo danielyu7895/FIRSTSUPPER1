@@ -20,16 +20,15 @@ function Home() {
 
                             </h2>
                             <p className="font-semibold mt-4 text-lg leading-relaxed text-custom">
-                                First Supper blallqwdlefleflel;flr;fr;;r;f;krfk
-                                frnfnrekfrjjrkgjkrjgkrjkgkrfkrkfnkrngkrnknrknf
-                                rvrmkgrkkrkngkrnkngknrkgnkngknkgnkrnknrngrnnfrk
-                                frfrmfkmfmrrrrrrrrrrrrrrrrrrrrrrrrrrrrrkrkfnk4nkn
-                                deffffffffmkemkfkekfnknrknfknkfnkrnkfnr
+                                First Supper connects students
+                                of the Hebrew university
+                                who lives in Jerusalem
+                                for joined Friday-dinner.
                             </p>
                             <div className="mt-12">
                                 <Link to="/FindDinner"
                                           // target="_self"
-                                          className="about-the-app text-custom font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-purple-dark active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                                          className="about-the-app text-custom font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-purple-dark active:bg-white uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                                 >
                                     Let's Get Started
                                 </Link>
