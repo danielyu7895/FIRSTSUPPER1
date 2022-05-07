@@ -1,214 +1,165 @@
-// import React from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../Styles/Profile.css";
 
-// function YourEvents(){
-//
-// // }
-//
-// // export default YourEvents;
-// import React from "react";
-// import { Link } from "react-router-dom";
-//
-//
-// // components
-//
-// export default function YourEvents() {
-//   return (
-//     <>
-//       <main>
-//         <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
-//           <div
-//             className="absolute top-0 w-full h-full bg-center bg-cover"
-//             style={{
-//               backgroundImage:
-//                 "url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')",
-//             }}
-//           >
-//             <span
-//               id="blackOverlay"
-//               className="w-full h-full absolute opacity-75 bg-black"
-//             ></span>
-//           </div>
-//           <div className="container relative mx-auto">
-//             <div className="items-center flex flex-wrap">
-//               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
-//                 <div className="pr-12">
-//                   <h1 className="text-white font-semibold text-5xl">
-//                     Let's Shihi together
-//                   </h1>
-//                   <h2 className="mt-4 text-lg text-blueGray-200">
-//                     Here is Shihi dinners for the next 2 weeks
-//                   </h2>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//           <div
-//             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
-//             style={{ transform: "translateZ(0)" }}
-//           >
-//             <svg
-//               className="absolute bottom-0 overflow-hidden"
-//               xmlns="http://www.w3.org/2000/svg"
-//               preserveAspectRatio="none"
-//               version="1.1"
-//               viewBox="0 0 2560 100"
-//               x="0"
-//               y="0"
-//             >
-//               <polygon
-//                 className="text-blueGray-200 fill-current"
-//                 points="2560 0 2560 100 0 100"
-//               ></polygon>
-//             </svg>
-//           </div>
-//         </div>
-//         <div className="container mx-auto">
-//           <div className="justify-center flex flex-wrap">
-//             <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-//               <Link to="/">All</Link>
-//             </button>
-//
-//
-//             <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-//               <Link to="/">kosher</Link>
-//             </button>
-//
-//             <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-//               <Link to="/">vegeterian</Link>
-//             </button>
-//
-//             <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-2 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-//               <Link to="/">All</Link>
-//             </button>
-//           </div>
-//         </div>
-//
-//         <div className="container px-4 mx-auto">
-//             <div className="flex flex-wrap">
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-//                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
-//                   <div className="px-4 py-5 flex-auto">
-//                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-//                       <i className="fas fa-award"></i>
-//                     </div>
-//                     <h6 className="text-xl font-semibold">שישי מסורתי</h6>
-//                     <p className="mt-2 mb-4 text-blueGray-500">
-//                       ארוחת שישי כמו בבית
-//                     </p>
-//                     <Link to="/" className="font-bold text-blueGray-700 mt-8">more info</Link>
-//                   </div>
-//                 </div>
-//               </div>
-//
-//
-//             </div>
-//         </div>
-//       </main>
-//     </>
-//   );
-// }
+// Components
+import EventsHeader from "../Components/EventsHeader";
+import EventCard from "../Components/Cards/EventCard";
+
+// components
+
+export default function YourEvents() {
+  return (
+      <main>
+        <div className="relative block h-350-px">
+        {/* eventsHeader */}
+          <EventsHeader/>
+        {/* <Tabs for filters (all koasger..)/> */}
+          {/* <FilterSample/> */}
+        </div>
+        <div className="relative mx-auto">
+            <div className="justify-center flex flex-wrap">
+              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+                <Link to="/YourEvents">All</Link>
+              </button>
+            
+
+              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+                <Link to="/kosherEvents">kosher</Link>
+              </button>
+
+              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+                <Link to="/vegeterianEvents">vegeterian</Link>
+              </button>
+
+              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+                <Link to="/veganEvents">vegan</Link>
+              </button>
+            </div>
+          </div>  
+         {/*non static element - preasents the events  */}
+
+        <div className="relative py-16 bg-blueGray-200">
+          <div className="container px-4 mx-auto">
+            <div className="flex flex-wrap">
+              {/* Cards */}
+              
+              <EventCard
+              statTitle="Yummy Shishi"
+              statImg="https://www.tyla.com/cdn-cgi/image/width=720,quality=70,format=jpeg,fit=pad,dpr=1/https%3A%2F%2Fs3-images.tyla.com%2Fs3%2Fcontent%2Fe04e37f35f584ef45a1658daba72cdd5.png"
+              statHostedBy="Matan Levi"
+              statWhere="Rehavia"
+              statDate="20/05/2022"
+              statTime="19:00"
+              statMinGuests= {6}
+              statMaxGuests= {12}
+              statDescripiron ="Shishi for food lovers!
+              everyone brings his best dish:) Wine and cake - on me"
+              statMoreInfo="/EventPage"
+
+              />
+              <EventCard
+              statTitle="Meet and talk"
+              statImg="https://c.stocksy.com/a/qSx400/z9/1181896.jpg"
+              statHostedBy="Michal Noy"
+              statWhere="musrara"
+              statDate="13/05/2022"
+              statTime="21:00"
+              statMinGuests= {4}
+              statMaxGuests= {8}
+              statDescripiron ="The food will be great, but the talking even more. 20 questions of haaretz in the menu"
+              statMoreInfo="/EventPage"
+
+              />
+              <EventCard
+              statTitle="Snacks, Beer and games"
+              statImg="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2020/03/shutterstock-four-friends-video-game-night-eating-pizza.jpg"
+              statHostedBy="Ronie Levie"
+              statWhere="Rehavia"
+              statDate="20/05/2022"
+              statTime="19:00"
+              statMinGuests= {2}
+              statMaxGuests= {6}
+              statDescripiron ="For those who only want to have fun, without a too serious Shishi dinner. You bring beers and I'll bring food and happy things. "
+              statMoreInfo="/EventPage"
+
+              />
+              
+              
+              <EventCard
+              statTitle="Dinner with students from abord"
+              statImg="https://static.timesofisrael.com/atlantajewishtimes/uploads/2016/11/airbnb-of-shabbat-to-ease-political-tension-02.jpg"
+              statHostedBy="Amit Lahav"
+              statWhere="The city ​​center"
+              statDate="13/05/2022"
+              statTime="19:00"
+              statMinGuests= {2}
+              statMaxGuests= {16}
+              statDescripiron ="We will be polite hosts and manage the meal in English. Feel free to come with English or foreign friends."
+              statMoreInfo="/EventPage"
+
+              />
+              <EventCard
+              statTitle="Traditional Shabbat Dinner"
+              statImg="https://thejewishnews.com/wp-content/uploads/2020/09/Lauren-Hoffman.jpg"
+              statHostedBy="Amit Lahav"
+              statWhere="Rehavia"
+              statDate="20/05/2022"
+              statTime="19:00"
+              statMinGuests= {4}
+              statMaxGuests= {8}
+              statDescripiron ="Nice food, traditional Shabbat songs and great Israeli vibes! "
+              statMoreInfo="/EventPage"
+
+              />
+              <EventCard
+              statTitle="Freestyle Shishi"
+              statImg="https://medias.timeout.co.il/www/uploads/2018/02/DSF0924_t-1140x641.jpg"
+              statHostedBy="Shani Dahan"
+              statWhere="Nachlaot"
+              statDate="13/05/2022"
+              statTime="20:00"
+              statMinGuests= {2}
+              statMaxGuests= {10}
+              statDescripiron ="Bring whatever you like, lets have a great SHISHI! "
+              statMoreInfo="/EventPage"
+              />
+              <EventCard
+              statTitle="Shishi for Ladies only"
+              statImg="https://i0.wp.com/acaseforplantbased.com/wp-content/uploads/2020/03/group-of-girlfriends-at-dinner-scaled.jpg?fit=1024%2C686&ssl=1"
+              statHostedBy="Moran Kahana"
+              statWhere="Rehavia"
+              statDate="20/05/2022"
+              statTime="19:00"
+              statMinGuests= {4}
+              statMaxGuests= {8}
+              statDescripiron ="Female dinner - good food and lots of wine, could be better than that? Suitable for vegetarianism. "
+              statMoreInfo="/EventPage"
+
+              />
+              <EventCard
+              statTitle="Italian shishi dinner"
+              statImg="https://www.blogwithakesh.com/wp-content/uploads/2020/02/friends-dinner.jpg"
+              statHostedBy="Fabiano Hochman"
+              statWhere="Katamon"
+              statDate="13/05/2022"
+              statTime="21:30"
+              statMinGuests= {2}
+              statMaxGuests= {10}
+              statDescripiron ="Italian Friday meal - pizza, pasta, wine, Italian music. At the end of the meal we will move to the living room for a fine Italian film. "
+              statMoreInfo="/EventPage"
+
+              />
+              
+
+              
+
+
+            </div>
+        </div>
+
+        </div>
+        
+      </main>
+  );
+}
