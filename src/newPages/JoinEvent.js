@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 // components
@@ -140,14 +140,14 @@ export default function JoinEvent() {
                                 {/*second part*/}
                                 <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
                                     <form> {/*tab with all questions*/}
-                                        <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                                        <h4 className= "font-bold text-blueGray-600">
                                             Send a message to your host
-                                        </h6>
+                                        </h4>
                                         <div className="flex flex-wrap">
                                             <div className="w-full lg:w-12/12 px-4">
                                                 <div className="relative w-full mb-3">
                                                     <label
-                                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                                        className="mt-10 py-10 border-blueGray-200 text-center"
                                                         htmlFor="grid-password"
                                                     >
                                                         You may tell him about your prefernces, a game you would like to bring, or ask a question about dinner,
@@ -165,14 +165,15 @@ export default function JoinEvent() {
 
                                         <hr className="mt-6 border-b-1 border-blueGray-300" />
 
-                                        <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                                        <br/>
+                                        <h4 className= "font-bold text-blueGray-600">
                                             Tell us what would you like to bring with you
-                                        </h6>
+                                        </h4>
                                         <div className="flex flex-wrap">
                                             <div className="w-full lg:w-12/12 px-4">
                                                 <div className="relative w-full mb-3">
                                                     <label
-                                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                                        className="mt-10 py-10 border-blueGray-200 text-center"
                                                         htmlFor="grid-password"
                                                     >
                                                         choose from: main dish/side dish/dessert/beverage
@@ -188,14 +189,15 @@ export default function JoinEvent() {
 
                                         <hr className="mt-6 border-b-1 border-blueGray-300" />
 
-                                        <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                                        <br/>
+                                        <h4 className= "font-bold text-blueGray-600">
                                             Would you like to bring your partner?
-                                        </h6>
+                                        </h4>
                                         <div className="flex flex-wrap">
                                             <div className="w-full lg:w-6/12 px-4">
                                                 <div className="relative w-full mb-3">
                                                     <label
-                                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                                        className="mt-10 py-10 border-blueGray-200 text-left"
                                                         htmlFor="grid-password"
                                                     >
                                                         First Name
@@ -210,7 +212,7 @@ export default function JoinEvent() {
                                             <div className="w-full lg:w-6/12 px-4">
                                                 <div className="relative w-full mb-3">
                                                     <label
-                                                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                                                        className="mt-10 py-10 border-blueGray-200 text-left"
                                                         htmlFor="grid-password"
                                                     >
                                                         Last Name
@@ -224,15 +226,18 @@ export default function JoinEvent() {
                                             </div>
                                         </div>
                                         <div className="text-center mt-12">
+                                            {/*<Modal showModal={this.state.showModal} setShowModal={this.setShowModal}>*/}
+                                            {/*</Modal>*/}
+                                            {/*<button type="button" onClick={this.showModal}>*/}
+                                            {/*    Open*/}
+                                            {/*</button>*/}
                                             <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
-                                                    onClick={() => setShowModal(true)}
                                             >
                                                 Join
                                             </button>
                                         </div>
                                     </form>
                                 </div>
-
                             </div>
                         </div>
                     </div>
