@@ -20,10 +20,9 @@ function Home() {
 
                             </h2>
                             <p className="font-semibold mt-4 text-lg leading-relaxed text-custom">
-                                First Supper connects students
-                                of the Hebrew university
-                                who lives in Jerusalem
-                                for joined Friday-dinner.
+                                    Friday night has just become a lot more exciting!<br/>
+                                    Find a dinner and meet new students who live around<br/> you,
+                                    accompanied by tasty food and good vibes
                             </p>
                             <div className="mt-12">
                                 <Link to="/FindDinner"

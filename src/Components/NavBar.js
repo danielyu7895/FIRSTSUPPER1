@@ -109,7 +109,7 @@ export default function Navbar(props) {
                                     className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="/"
                                 >
-                                    <i className="ttext-purple-dark far text-lg leading-lg mr-2" />{" "}
+                                    <i className="text-purple-dark far text-lg leading-lg mr-2" />{" "}
                                     Home
                                 </a>
 

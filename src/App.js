@@ -16,7 +16,7 @@ import Footer from "./Components/Footer";
 import SignUpForm2 from "./Pages/SignUpForm2";
 import Profile from "./Pages/Profile";
 import Settings from "./Pages/Settings";
-import YourEvents from "./newPages/YourEvents";
+import YourEvents from "./Pages/YourEvents";
 import JoinEvent from "./newPages/JoinEvent";
 import EventPage from "./Pages/EventPage";
 
