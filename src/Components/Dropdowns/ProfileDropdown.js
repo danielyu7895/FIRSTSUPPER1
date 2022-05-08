@@ -76,7 +76,7 @@
 //
 import React from "react";
 import { createPopper } from '@popperjs/core';
-import {Avatar} from "@mui/material";
+import {Avatar, Link} from "@mui/material";
 import "../../Styles/Profile.css"
 
 const ProfileDropdown = () => {
@@ -113,41 +113,36 @@ const ProfileDropdown = () => {
                             ref={popoverDropdownRef}
                             className={
                                 (dropdownPopoverShow ? "block " : "hidden ") +
-                                "bg-purple-dark text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 min-w-48"
+                                "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1 min-w-48"
                             }
                         >
                             <a
-                                href="#pablo"
-                                className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
-                                onClick={e => e.preventDefault()}
+                                href="/Profile"
+                                className="text-sm py-2 px-4 font-semibold block w-full whitespace-nowrap bg-transparent text-purple-dark"
                             >
-                                Action
+                                Profile
                             </a>
-
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
 
                             <a
-                                href="#pablo"
-                                className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
-                                onClick={e => e.preventDefault()}
+                                href="/Settings"
+                                className="text-sm py-2 px-4 font-semibold block w-full whitespace-nowrap bg-transparent text-purple-dark"
                             >
-                                Action
+                                Settings
                             </a>
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
                             <a
-                                href="#pablo"
-                                className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
-                                onClick={e => e.preventDefault()}
+                                href="/YourEvents"
+                                className="text-sm py-2 px-4 font-semibold block w-full whitespace-nowrap bg-transparent text-purple-dark"
                             >
-                                Action
+                                Your Events
                             </a>
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
                             <a
-                                href="#pablo"
-                                className="text-sm py-2 px-4 font-normal block w-full whitespace-no-wrap bg-transparent text-white"
-                                onClick={e => e.preventDefault()}
+                                href="/SignOut"
+                                className="text-sm py-2 px-4 font-semibold block w-full whitespace-nowrap bg-transparent text-purple-dark"
                             >
-                                Seprated link
+                                Sign Out
                             </a>
                         </div>
                     </div>

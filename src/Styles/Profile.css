@@ -701,19 +701,22 @@ select {
 
     /*backgroundImage: 'url('https://www.net-working.co.il/wp-content/uploads/elementor/thumbs/Depositphotos_1142032_original-e1506765947425-nf89d7jv8yvrggwt72akhf6g4qt0kmfelp9es48igg.jpg')";*/
     /*backgroundPosition: 'center';*/
-    /*backgroundSize: 'cover';*/
+    /*background-size: cover;*/
     /*backgroundRepeat: 'no-repeat';*/
     /*background: #2563eb;*/
-    background-image: url("https://www.healthdigest.com/img/gallery/when-you-drink-wine-every-night-this-is-what-happens-to-your-body/l-intro-1617128653.jpg");
-
-
-
-
-
+    /*background-image: url("https://www.healthdigest.com/img/gallery/when-you-drink-wine-every-night-this-is-what-happens-to-your-body/l-intro-1617128653.jpg");*/
+    /*background-position: right;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*opacity: 0.9;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.healthdigest.com/img/gallery/when-you-drink-wine-every-night-this-is-what-happens-to-your-body/l-intro-1617128653.jpg');
+    height: 100%;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.9;
+    background-size: cover;
 }
 
 @media (min-width: 640px) {
@@ -2460,6 +2463,7 @@ select {
 .text-custom{
     --tw-text-opacity: 1;
     color: antiquewhite;
+    white-space: pre-line;
 }
 
 .text-blueGray-500 {
