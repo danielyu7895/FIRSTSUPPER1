@@ -18,7 +18,7 @@ export default function EventCard({
 }){
   return (
 
-        <div className="lg:pt-12 pt-6  w-full md:w-4/12 max-h-200-px px-4">
+        <div className="w-full md:w-4/12 max-h-200-px px-4">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg ">
                 <img alt="..." src={statImg}
                   className="w-full align-middle rounded-t-lg h-220-px"
