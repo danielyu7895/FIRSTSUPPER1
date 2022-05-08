@@ -17,11 +17,11 @@ export default function EventCard({
     statMoreInfo
 }){
   return (
-        <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4">
-            
+
+        <div className="lg:pt-12 pt-6  w-full md:w-4/12 max-h-200-px px-4">
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg ">
                 <img alt="..." src={statImg}
-                  className="w-full align-middle rounded-t-lg"
+                  className="w-full align-middle rounded-t-lg h-220-px"
                     />
                   <div className="px-4 py-5 flex-auto text-center">
                     
@@ -49,7 +49,7 @@ export default function EventCard({
                     <div className="my-4 text-blueGray-600">
                         <i className="fas fa-user-group ml-2 mr-1 text-lg text-blueGray-400"></i>{statMinGuests}-{statMaxGuests} Guests
                     </div>
-                    <div className="mt-2 mb-4 text-blueGray-500 border-t border-blueGray-200 ">
+                    <div className="mt-2 mb-4 text-blueGray-500 border-t border-blueGray-200 h-100-px">
                         <br/>
                     {statDescripiron}
                     </div>
@@ -64,6 +64,7 @@ export default function EventCard({
                   </div>
                 </div>
               </div>
+
   );
 }
 

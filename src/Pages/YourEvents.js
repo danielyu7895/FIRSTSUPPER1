@@ -41,7 +41,7 @@ export default function YourEvents() {
 
         <div className="relative py-16 bg-blueGray-200">
           <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap ">
               {/* Cards */}
               
               <EventCard
