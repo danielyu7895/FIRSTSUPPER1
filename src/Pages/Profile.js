@@ -51,6 +51,8 @@ export default function Profile() {
                                             <img
                                                 alt="..."
                                                 src = "https://www.assignnmentinneed.com/wp-content/uploads/2020/10/successful-college-student-lg.png"
+                                                // style={{width: 350, height: 150, borderRadius: 210/ 2}}
+
                                                 className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                                             />
                                         </div>

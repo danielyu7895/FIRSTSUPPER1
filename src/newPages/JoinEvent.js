@@ -114,7 +114,7 @@ export default function JoinEvent() {
                                 </div>
                                 <div className="text-center mt-12">
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                                        Traditional Shabbat Dinner
+                                        Join Traditional Shabbat Dinner
                                     </h3>
                                     <div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">
                                         <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}

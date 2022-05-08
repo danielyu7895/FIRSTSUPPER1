@@ -19,20 +19,20 @@ export default function YourEvents() {
         </div>
         <div className="relative mx-auto">
             <div className="justify-center flex flex-wrap">
-              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+              <button className="bg-purple-dark text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
                 <Link to="/YourEvents">All</Link>
               </button>
             
 
-              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+              <button className="bg-purple-dark text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
                 <Link to="/kosherEvents">kosher</Link>
               </button>
 
-              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+              <button className="bg-purple-dark text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
                 <Link to="/vegeterianEvents">vegeterian</Link>
               </button>
 
-              <button className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
+              <button className="bg-purple-dark text-white active:bg-orange-600 font-bold uppercase text-xs px-4 py-4 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-4 mb-1 ease-linear transition-all duration-150" type="button">
                 <Link to="/veganEvents">vegan</Link>
               </button>
             </div>
@@ -62,17 +62,17 @@ export default function YourEvents() {
               statTitle="Meet and talk"
               statImg="https://c.stocksy.com/a/qSx400/z9/1181896.jpg"
               statHostedBy="Michal Noy"
-              statWhere="musrara"
+              statWhere="Musrara"
               statDate="13/05/2022"
               statTime="21:00"
               statMinGuests= {4}
               statMaxGuests= {8}
-              statDescripiron ="The food will be great, but the talking even more. 20 questions of haaretz in the menu"
+              statDescripiron ="The food will be great and the talking even more. 20 questions of haaretz in the menu"
               statMoreInfo="/EventPage"
 
               />
               <EventCard
-              statTitle="Snacks, Beer and games"
+              statTitle="Snacks, beer and games"
               statImg="https://d2rd7etdn93tqb.cloudfront.net/wp-content/uploads/2020/03/shutterstock-four-friends-video-game-night-eating-pizza.jpg"
               statHostedBy="Ronie Levie"
               statWhere="Rehavia"
@@ -82,17 +82,18 @@ export default function YourEvents() {
               statMaxGuests= {6}
               statDescripiron ="For those who only want to have fun, without a too serious Shishi dinner. You bring beers and I'll bring food and happy things. "
               statMoreInfo="/EventPage"
-
               />
-              
+              {/*<Link to="/JoinEvent" className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>*/}
+
+
               
               <EventCard
-              statTitle="Dinner with students from abord"
+              statTitle="Dinner with students from aboard"
               statImg="https://static.timesofisrael.com/atlantajewishtimes/uploads/2016/11/airbnb-of-shabbat-to-ease-political-tension-02.jpg"
-              statHostedBy="Amit Lahav"
-              statWhere="The city ​​center"
+              statHostedBy="Or Cohen"
+              statWhere="The City ​​Center"
               statDate="13/05/2022"
-              statTime="19:00"
+              statTime="19:30"
               statMinGuests= {2}
               statMaxGuests= {16}
               statDescripiron ="We will be polite hosts and manage the meal in English. Feel free to come with English or foreign friends."

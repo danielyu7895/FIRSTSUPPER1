@@ -19,10 +19,12 @@ import Settings from "./Pages/Settings";
 import YourEvents from "./Pages/YourEvents";
 import JoinEvent from "./newPages/JoinEvent";
 import EventPage from "./Pages/EventPage";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
     return (
         <Router>
+            <ScrollToTop/>
             <Navbar />
             <Switch>
                 <Route path='/' exact component={Home} />

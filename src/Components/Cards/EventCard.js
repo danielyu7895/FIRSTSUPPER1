@@ -54,12 +54,21 @@ export default function EventCard({
                     {statDescripiron}
                     </div>
                     <div className=''>
-                        <Link to={statMoreInfo} className="font-bold text-orange-500">
+                        <Link to={statMoreInfo} className="font-bold text-purple-dark">
                         Show more
                             <i className="fas fa-angles-right ml-2">
                             </i>
-                            
+
                         </Link>
+                        {/*<div className="fas fa-angels-right ml-2 w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">*/}
+                        {/*    <div className="items-center py-6 px-3 mt-32 sm:mt-0">*/}
+                        {/*        <button>*/}
+                        {/*            <Link to="/JoinEvent" className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>*/}
+
+                        {/*        </button>*/}
+
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>  
                   </div>
                 </div>
@@ -77,7 +86,7 @@ EventCard.defaultProps = {
     statMinGuests: 4,
     statMaxGuests: 8,
     statDate: "01/01/2001",
-    statTime: "20:00",
+    // statTime: "20:00",
     statMoreInfo:"/EventPage"
   };
   
