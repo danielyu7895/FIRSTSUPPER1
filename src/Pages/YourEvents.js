@@ -41,7 +41,7 @@ export default function YourEvents() {
 
         <div className="relative py-16 bg-blueGray-200">
           <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap ">
               {/* Cards */}
               
               <EventCard
@@ -62,7 +62,7 @@ export default function YourEvents() {
               statTitle="Meet and talk"
               statImg="https://c.stocksy.com/a/qSx400/z9/1181896.jpg"
               statHostedBy="Michal Noy"
-              statWhere="musrara"
+              statWhere="Musrara"
               statDate="13/05/2022"
               statTime="21:00"
               statMinGuests= {4}

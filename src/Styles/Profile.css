@@ -1583,6 +1583,13 @@ select {
     height: 70px;
 }
 
+.h-220-px {
+    height: 220px;
+}
+.h-100-px {
+    height: 100px;
+}
+
 .h-350-px {
     height: 350px;
 }
@@ -2579,6 +2586,12 @@ select {
 .w-full {
     width: 100%;
 }
+.box {
+    border: 5px solid darkblue;
+    height: 600px;
+    width: 600px;
+}
+
 
 .z-2 {
     z-index: 2;
