@@ -1,7 +1,7 @@
 // used in EventPage.js
 
 import React from 'react'
-import "../Styles/Profile.css"
+import "../Styles/Profile.css";
 
 
 function EventsHeader() {
@@ -28,8 +28,14 @@ function EventsHeader() {
                                 Let's Shishi together
                             </h1>
                             <h2 className="my-4 text-xl text-blueGray-200">
-                             Here is Shishi dinners for you
+                             Here is Shishi dinners for you near 
                             </h2>
+                            <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded text-orange-600 bg-purple-bright uppercase last mb-6"> 
+                            
+                            
+                            Rehavia, Jerusalem
+                            <i className='fas fa-pen ml-2 text-lg text-blueGray-700' /></span>
+                            
                         </div>
                     </div>
                 </div>
@@ -41,3 +47,4 @@ function EventsHeader() {
 }
 
 export default EventsHeader
+
