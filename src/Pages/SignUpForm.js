@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "../Styles/SignUpForm.css";
 import React from "react";
-import UploadImg from '../Components/uploadImage';
+import UploadImg from '../Components/uploadImage.js';
 import {Link} from "react-router-dom";
 import {TextField} from "@mui/material";
 

@@ -1,4 +1,4 @@
-import InterestButton from "./InterestButton";
+import InterestButton from "./InterestButton.js";
 import React from "react";
 /* eslint-disable */
 const tags = require('./Interests.json')

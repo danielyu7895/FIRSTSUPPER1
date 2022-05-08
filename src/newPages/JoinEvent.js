@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 // components
 
-import Tag from "../Components/Tag";
-import Modal from "./ConfirmationMSG"
+import Tag from "../Components/Tag.js";
+import Modal from "./ConfirmationMSG.js"
 
 // page content
 export default function JoinEvent() {

@@ -1,5 +1,5 @@
 import "../Styles/SignUpForm2.css"
-import SignUpInterests from "../Components/SignUpInterests";
+import SignUpInterests from "../Components/SignUpInterests.js";
 import React from "react";
 
 function SignUpForm2() {

@@ -6,8 +6,8 @@ import "../Styles/Profile.css";
 
 // components
 
-import EventCard from "../Components/Cards/EventCard";
-import EventsHeader from "../Components/EventsHeader";
+import EventCard from "../Components/Cards/EventCard.js";
+import EventsHeader from "../Components/EventsHeader.js";
 
 
 

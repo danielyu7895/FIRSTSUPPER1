@@ -1,6 +1,6 @@
 import "../Styles/EvenPage.css"
 import React from "react";
-import Tag from "../Components/Tag";
+import Tag from "../Components/Tag.js";
 import {Link} from "react-router-dom";
 
 

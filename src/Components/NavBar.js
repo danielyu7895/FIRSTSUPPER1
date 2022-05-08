@@ -66,7 +66,7 @@ import "../Styles/Profile.css"
 
 // import IndexDropdown from "./Dropdowns/IndexDropdown";
 import {Avatar} from "@mui/material";
-import ProfileDropdown from "./Dropdowns/ProfileDropdown";
+import ProfileDropdown from "./Dropdowns/ProfileDropdown.js";
 
 
 export default function Navbar(props) {

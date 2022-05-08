@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "./Components/NavBar";
+import Navbar from "./Components/NavBar.js";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import "./Styles/Profile.css"
 
@@ -10,19 +10,20 @@ import "./Styles/Profile.css"
 // import SignUp from './pages/signup';
 // import SignUpForm from "./Pages/SignUpForm"
 // import Form from "./Components/Form";
-import SignUpForm from "./Pages/SignUpForm";
-import Home from "./Pages/Home";
-import Footer from "./Components/Footer";
-import SignUpForm2 from "./Pages/SignUpForm2";
-import Profile from "./Pages/Profile";
-import Settings from "./Pages/Settings";
-import YourEvents from "./Pages/YourEvents";
-import JoinEvent from "./newPages/JoinEvent";
-import EventPage from "./Pages/EventPage";
-import ScrollToTop from "./Components/ScrollToTop";
+import SignUpForm from "./Pages/SignUpForm.js";
+import Home from "./Pages/Home.js";
+import Footer from "./Components/Footer.js";
+import SignUpForm2 from "./Pages/SignUpForm2.js";
+import Profile from "./Pages/Profile.js";
+import Settings from "./Pages/Settings.js";
+import YourEvents from "./Pages/YourEvents.js";
+import JoinEvent from "./newPages/JoinEvent.js";
+import EventPage from "./Pages/EventPage.js";
+import ScrollToTop from "./Components/ScrollToTop.js";
 
 function App() {
     return (
+
         <Router>
             <ScrollToTop/>
             <Navbar />
@@ -38,6 +39,7 @@ function App() {
                 <Route path='/JoinEvent' component={JoinEvent} />
             </Switch>
         </Router>
+
     );
 }
 
