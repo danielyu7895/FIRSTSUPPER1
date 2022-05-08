@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 // components
 
-import Tag from "../Components/Tag.js";
-import Modal from "./ConfirmationMSG.js"
+import Tag from "../Components/Tag";
+import Modal from "./ConfirmationMSG"
 
 // page content
 export default function JoinEvent() {
@@ -232,9 +232,8 @@ export default function JoinEvent() {
                                             {/*    Open*/}
                                             {/*</button>*/}
                                             {/*<Modal open={this.state.setShowModal}></Modal>*/}
-                                            <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button"
-                                            >
-                                            {/*//         onClick={() => this.setState({setShowModal: true})}//*/}
+                                            <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                                            {/*//         onClick={() => this.setState({setShowModal: true})}*/}
                                                 Join
                                             </button>
                                         </div>
