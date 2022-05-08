@@ -25,7 +25,7 @@ function EventsHeader() {
                     <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                         <div className="pr-12">
                             <h1 className=" my-4 text-white font-bold text-5xl">
-                                Let's Shihi together
+                                Let's Shishi together
                             </h1>
                             <h2 className="my-4 text-xl text-blueGray-200">
                              Here is Shishi dinners for you
