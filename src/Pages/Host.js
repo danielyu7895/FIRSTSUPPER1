@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import UploadImg from "../Components/uploadImage";
 import SignUpInterests from "../Components/SignUpInterests.js";
-import NutritionalLimitations from "../Components/NutritionalLimitations";
-
+import NutritionalLimitations from "../Components/NutritionalLimitations.js";
 
 
 // page content
@@ -184,6 +183,10 @@ export default function Host() {
                                         <input onChange={handleDate} className="border-blueGray-300"
                                                value={date} type="date"/>
 
+
+
+
+
                                         <br/>
 
                                         <div className="flex flex-wrap">
@@ -214,7 +217,7 @@ export default function Host() {
                                                     </label>
                                                     <input
                                                         type="text"
-                                                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                        className="border border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                                         defaultValue=""
                                                     />
                                                 </div>
@@ -229,7 +232,7 @@ export default function Host() {
                                                     </label>
                                                     <input
                                                         type="text"
-                                                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                                                        className="border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                                                         defaultValue=""
                                                     />
                                                 </div>

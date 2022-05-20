@@ -125,10 +125,10 @@ const ProfileDropdown = () => {
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
 
                             <a
-                                href="/Settings"
+                                href="/History"
                                 className="text-sm py-2 px-4 font-semibold block w-full whitespace-nowrap bg-transparent text-purple-dark"
                             >
-                                Settings
+                                History
                             </a>
                             <div className="h-0 my-2 border border-solid border-t-0 border-blueGray-800 opacity-25" />
                             <a

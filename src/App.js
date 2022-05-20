@@ -21,6 +21,7 @@ import JoinEvent from "./newPages/JoinEvent.js";
 import EventPage from "./Pages/EventPage.js";
 import Host from "./Pages/Host.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
+import History from "./Pages/History"
 
 function App() {
     return (
@@ -39,6 +40,7 @@ function App() {
                 <Route path='/FindDinner' component={YourEvents} />
                 <Route path='/EventPage' component={EventPage} />
                 <Route path='/JoinEvent' component={JoinEvent} />
+                <Route path='/History' component={History} />
             </Switch>
         </Router>
 
