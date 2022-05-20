@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "content": "Kosher"},
+
+  {"id": "2",
+    "content": "Vegetarian"},
+
+  {"id": "3",
+    "content": "Vegan"},
+
+  {"id": "4",
+    "content": "Gluten Free"}
+
+]

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../Styles/InterestButton.css"
+import "../Styles/LimitationButton.css"
 
 //
 // const onMouseOver = event => {
@@ -16,7 +16,7 @@ import "../Styles/InterestButton.css"
 //     el.style.backgroundColor = white;
 // };
 
-function InterestButton({ children }) {
+function LimitationButton({ children }) {
     const [backgroundColor, setBackgroundColor] = useState(false)
     return (
         <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" onClick={() => setBackgroundColor(!backgroundColor)} className={`${backgroundColor && 'active'} profile-interests-tag`}>
@@ -28,7 +28,4 @@ function InterestButton({ children }) {
 }
 
 
-
-
-
-export default InterestButton
+export default LimitationButton

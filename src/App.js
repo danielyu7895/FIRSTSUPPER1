@@ -19,6 +19,7 @@ import Settings from "./Pages/Settings.js";
 import YourEvents from "./Pages/YourEvents.js";
 import JoinEvent from "./newPages/JoinEvent.js";
 import EventPage from "./Pages/EventPage.js";
+import Host from "./Pages/Host.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
                 <Route path='/Profile' component={Profile} />
                 {/*<Route path='/Settings' component={EventPage} />*/}
                 {/*<Route path='/YourEvents' component={YourEvents} />*/}
+                <Route path= '/Host' component={Host} />
                 <Route path='/FindDinner' component={YourEvents} />
                 <Route path='/EventPage' component={EventPage} />
                 <Route path='/JoinEvent' component={JoinEvent} />
