@@ -12,16 +12,19 @@ import "./Styles/Profile.css"
 // import Form from "./Components/Form";
 import SignUpForm from "./Pages/SignUpForm.js";
 import Home from "./Pages/Home.js";
-import Footer from "./Components/Footer.js";
+// import Footer from "./Components/Footer.js";
 import SignUpForm2 from "./Pages/SignUpForm2.js";
 import Profile from "./Pages/Profile.js";
-import Settings from "./Pages/Settings.js";
+// import Settings from "./Pages/Settings.js";
 import YourEvents from "./Pages/YourEvents.js";
 import JoinEvent from "./newPages/JoinEvent.js";
 import EventPage from "./Pages/EventPage.js";
-import Host from "./Pages/Host.js";
+// import Host from "./Pages/Host.js";
 import ScrollToTop from "./Components/ScrollToTop.js";
 import History from "./Pages/History"
+import Login from "./newPages/Login";
+import Host from "./Pages/Host";
+import Register from "./newPages/Register";
 
 function App() {
     return (
@@ -36,6 +39,9 @@ function App() {
                 <Route path='/Profile' component={Profile} />
                 {/*<Route path='/Settings' component={EventPage} />*/}
                 {/*<Route path='/YourEvents' component={YourEvents} />*/}
+                <Route path= '/Login' component={Login} />
+                <Route path= '/Register' component={Register} />
+
                 <Route path= '/Host' component={Host} />
                 <Route path='/FindDinner' component={YourEvents} />
                 <Route path='/EventPage' component={EventPage} />

@@ -19,6 +19,7 @@ import "../Styles/InterestButton.css"
 function InterestButton({ children }) {
     const [backgroundColor, setBackgroundColor] = useState(false)
     return (
+        // eslint-disable-next-line
         <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" onClick={() => setBackgroundColor(!backgroundColor)} className={`${backgroundColor && 'active'} profile-interests-tag`}>
 
             {children}

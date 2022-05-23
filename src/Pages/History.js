@@ -1,7 +1,7 @@
 // import SignUpInterests from "../Components/SignUpInterests";
 import "../Styles/Profile.css"
 import React from "react";
-import Tag from "../Components/Tag.js";
+// import Tag from "../Components/Tag.js";
 
 export default function History() {
     return (

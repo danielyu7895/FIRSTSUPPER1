@@ -1,8 +1,10 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import UploadImg from "../Components/uploadImage";
-import SignUpInterests from "../Components/SignUpInterests.js";
+// import SignUpInterests from "../Components/SignUpInterests.js";
 import NutritionalLimitations from "../Components/NutritionalLimitations.js";
+// import TimePicker from "react-time-picker/src/TimePicker";
+// import BasicTimePicker from "../Components/TimePicker";
 
 
 // page content
@@ -119,7 +121,7 @@ export default function Host() {
 
                                 {/*second part*/}
                                 <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                                    <form> {/*tab with all questions*/}
+                                    {/*<form> /!*tab with all questions*!/*/}
                                         <h4 className= "font-bold text-blueGray-600">
                                             Dinner Name
                                         </h4>
@@ -175,6 +177,7 @@ export default function Host() {
                                             htmlFor="grid-password"
                                         >
                                             Date
+                                            {/*<BasicTimePicker/>*/}
                                         </label>
 
 
@@ -289,7 +292,7 @@ export default function Host() {
                                                 Create Event
                                             </button>
                                         </div>
-                                    </form>
+                                    {/*</form>*/}
                                 </div>
                             </div>
                         </div>

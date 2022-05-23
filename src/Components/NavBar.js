@@ -121,6 +121,22 @@ export default function Navbar(props) {
                                     Become a Host
                                 </a>
 
+                                <a
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    href="/Login"
+                                >
+                                    <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
+                                    Login
+                                </a>
+
+                                <a
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    href="/Register"
+                                >
+                                    <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
+                                    Register
+                                </a>
+
 
                                 <a
                                     className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"

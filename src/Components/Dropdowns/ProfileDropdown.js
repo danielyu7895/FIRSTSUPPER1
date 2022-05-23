@@ -76,7 +76,7 @@
 //
 import React from "react";
 import { createPopper } from '@popperjs/core';
-import {Avatar, Link} from "@mui/material";
+import {Avatar} from "@mui/material";
 import "../../Styles/Profile.css"
 
 const ProfileDropdown = () => {
