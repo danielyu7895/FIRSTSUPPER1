@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../Styles/LimitationButton.css"
+import "../Styles/InterestButton.css"
 
 //
 // const onMouseOver = event => {
