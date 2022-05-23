@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import UploadImg from "../Components/uploadImage";
-import SignUpInterests from "../Components/SignUpInterests.js";
 import NutritionalLimitations from "../Components/NutritionalLimitations.js";
 
 
@@ -13,6 +12,21 @@ export default function Host() {
     const handleDate = (e) => {
         setDate(e.target.value);
     };
+
+    const [time, setTime] = useState('');
+    // Handling the time change
+    const handleTime = (e) => {
+        setTime(e.target.value);
+    };
+
+    const [number, setNumber] = useState('');
+    // Handling the number change
+    const handleNumber = (e) => {
+        setNumber(e.target.value);
+    };
+
+
+
 
 
     return (
@@ -119,7 +133,6 @@ export default function Host() {
 
                                 {/*second part*/}
                                 <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                                    <form> {/*tab with all questions*/}
                                         <h4 className= "font-bold text-blueGray-600">
                                             Dinner Name
                                         </h4>
@@ -175,34 +188,40 @@ export default function Host() {
                                             htmlFor="grid-password"
                                         >
                                             Date
+
                                         </label>
 
 
-                                        <br/>
+
+                                    <br/>
                                         <br/>
                                         <input onChange={handleDate} className="border-blueGray-300"
                                                value={date} type="date"/>
 
 
+                                    <br/>
+                                    <br/>
 
+                                    <label
+                                        className="mt-10 py-10 border-blueGray-200 text-center"
+                                        htmlFor="grid-password">
+                                        Time
+                                    </label>
 
+                                    <br/>
+                                    <br/>
 
-                                        <br/>
+                                    <input onChange={handleTime} className="border-blueGray-300"
+                                           value={time} type="time"/>
+
+                                    <br/>
 
                                         <div className="flex flex-wrap">
                                             <div className="w-full lg:w-12/12 px-4">
                                                 <div className="relative w-full mb-3">
-
-                                                    {/*<textarea*/}
-                                                    {/*    type="text"*/}
-                                                    {/*    className="border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"*/}
-                                                    {/*    rows="1"*/}
-                                                    {/*></textarea>*/}
                                                 </div>
                                             </div>
                                         </div>
-
-                                        {/*<hr className="mt-6 border-b-1 border-blueGray-300" />*/}
 
                                         <br/>
 
@@ -215,11 +234,9 @@ export default function Host() {
                                                     >
                                                         Maximum Seats
                                                     </label>
-                                                    <input
-                                                        type="text"
-                                                        className="border border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                                        defaultValue=""
-                                                    />
+                                                    <br/>
+                                                    <input onChange={handleNumber} className="border-blueGray-300"
+                                                           value={number} type="number"/>
                                                 </div>
                                             </div>
                                             <div className="w-full lg:w-6/12 px-4">
@@ -230,19 +247,15 @@ export default function Host() {
                                                     >
                                                         Minimum Seats
                                                     </label>
-                                                    <input
-                                                        type="text"
-                                                        className="border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                                                        defaultValue=""
-                                                    />
+                                                    <br/>
+                                                    <input onChange={handleNumber} className="border-blueGray-300"
+                                                           value={number} type="number"/>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <br/>
 
-                                        {/*<div className="flex-auto px-4 lg:px-10 py-10 pt-0">*/}
-                                            {/*<form> /!*tab with all questions*!/*/}
                                                 <h4 className= "font-bold text-blueGray-600">
                                                     Describe your dinner
                                                 </h4>
@@ -250,13 +263,6 @@ export default function Host() {
                                                 <div className="flex flex-wrap">
                                                     <div className="w-full lg:w-12/12 px-4">
                                                         <div className="relative w-full mb-3">
-                                                            {/*<label*/}
-                                                            {/*    className="mt-10 py-10 border-blueGray-200 text-center"*/}
-                                                            {/*    htmlFor="grid-password"*/}
-                                                            {/*>*/}
-                                                            {/*    You may tell him about your prefernces, a game you would like to bring, or ask a question about dinner,*/}
-                                                            {/*    There's no wrong answer here!*/}
-                                                            {/*</label>*/}
                                                             <textarea
                                                                 type="text"
                                                                 className="border-blueGray-300 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
@@ -289,7 +295,6 @@ export default function Host() {
                                                 Create Event
                                             </button>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
