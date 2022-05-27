@@ -25,7 +25,11 @@ export default function Host() {
         setNumber(e.target.value);
     };
 
-
+    const [number1, setNumber1] = useState('');
+    // Handling the number change
+    const handleNumber1 = (e) => {
+        setNumber1(e.target.value);
+    };
 
 
 
@@ -163,6 +167,7 @@ export default function Host() {
                                             Where?
                                         </h4>
                                         <br/>
+
                                         <div className="flex flex-wrap">
                                             <div className="w-full lg:w-12/12 px-4">
                                                 <div className="relative w-full mb-3">
@@ -183,36 +188,35 @@ export default function Host() {
                                         <label className= "font-bold text-blueGray-600">When?</label>
                                         <br/>
                                         <br/>
-                                        <label
-                                            className="mt-10 py-10 border-blueGray-200 text-center"
-                                            htmlFor="grid-password"
-                                        >
-                                            Date
 
-                                        </label>
-
-
-
-                                    <br/>
-                                        <br/>
-                                        <input onChange={handleDate} className="border-blueGray-300"
-                                               value={date} type="date"/>
-
-
-                                    <br/>
-                                    <br/>
-
-                                    <label
-                                        className="mt-10 py-10 border-blueGray-200 text-center"
-                                        htmlFor="grid-password">
-                                        Time
-                                    </label>
-
-                                    <br/>
-                                    <br/>
-
-                                    <input onChange={handleTime} className="border-blueGray-300"
-                                           value={time} type="time"/>
+                                    <div className="flex flex-wrap">
+                                        <div className="w-full lg:w-6/12 px-4">
+                                            <div className="relative w-full mb-3">
+                                                <label
+                                                    className="text-blueGray-600 mt-10 py-10 border-blueGray-200 text-left"
+                                                    htmlFor="grid-password"
+                                                >
+                                                    Date
+                                                </label>
+                                                <br/>
+                                                <input onChange={handleDate} className="border-blueGray-300"
+                                                       value={date} type="date"/>
+                                            </div>
+                                        </div>
+                                        <div className="w-full lg:w-6/12 px-4">
+                                            <div className="relative w-full mb-3">
+                                                <label
+                                                    className="text-blueGray-600 mt-10 py-10 border-blueGray-200 text-left"
+                                                    htmlFor="grid-password"
+                                                >
+                                                    Time
+                                                </label>
+                                                <br/>
+                                                <input onChange={handleTime} className="border-blueGray-300"
+                                                       value={time} type="time"/>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <br/>
 
@@ -236,7 +240,7 @@ export default function Host() {
                                                     </label>
                                                     <br/>
                                                     <input onChange={handleNumber} className="border-blueGray-300"
-                                                           value={number} type="number"/>
+                                                           value={number} type="number" min = "2"/>
                                                 </div>
                                             </div>
                                             <div className="w-full lg:w-6/12 px-4">
@@ -248,8 +252,8 @@ export default function Host() {
                                                         Minimum Seats
                                                     </label>
                                                     <br/>
-                                                    <input onChange={handleNumber} className="border-blueGray-300"
-                                                           value={number} type="number"/>
+                                                    <input onChange={handleNumber1} className="border-blueGray-300"
+                                                           value={number1} type="number" min= "2"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -291,7 +295,6 @@ export default function Host() {
 
                                         <div className="text-center mt-12">
                                             <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                                {/*//         onClick={() => this.setState({setShowModal: true})}*/}
                                                 Create Event
                                             </button>
                                         </div>

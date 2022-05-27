@@ -1143,6 +1143,11 @@ select {
     background-color: rgba(168, 85, 247, var(--tw-bg-opacity));
 }
 
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+}
+
 .bg-indigo-500 {
     --tw-bg-opacity: 1;
     background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
