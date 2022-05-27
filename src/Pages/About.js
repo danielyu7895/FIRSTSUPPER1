@@ -1,7 +1,7 @@
 import "../Styles/Profile.css"
 import React from "react";
 
-export default function Settings() {
+export default function About() {
     return (
         <>
             {/*<Navbar transparent />*/}
@@ -11,7 +11,7 @@ export default function Settings() {
                         className="absolute top-0 w-full h-full bg-center bg-cover"
                         style={{
                             backgroundImage:
-                                "url('https://img.delicious.com.au/baqqI3QN/del/2020/02/gathered-around-a-dining-table-126554-1.jpg')",
+                                "url('https://img.freepik.com/free-photo/close-up-people-eating-delicious-food_23-2149001335.jpg?w=2000",
                         }}
                     >
             <span
@@ -61,7 +61,7 @@ export default function Settings() {
                                 </div>
                                 <div className="text-center mt-2">
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                                        Settings
+                                        About Us
                                     </h3>
 
                                 </div>

@@ -236,7 +236,7 @@ export default function Host() {
                                                         className="font-bold text-blueGray-600 mt-10 py-10 border-blueGray-200 text-left"
                                                         htmlFor="grid-password"
                                                     >
-                                                        Maximum Seats
+                                                        Maximum Guests
                                                     </label>
                                                     <br/>
                                                     <input onChange={handleNumber} className="border-blueGray-300"
@@ -249,7 +249,7 @@ export default function Host() {
                                                         className="font-bold text-blueGray-600 mt-10 py-10 border-blueGray-200 text-left"
                                                         htmlFor="grid-password"
                                                     >
-                                                        Minimum Seats
+                                                        Minimum Guests
                                                     </label>
                                                     <br/>
                                                     <input onChange={handleNumber1} className="border-blueGray-300"

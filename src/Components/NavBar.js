@@ -137,7 +137,6 @@ export default function Navbar(props) {
                                     Register
                                 </a>
 
-
                                 <a
                                     className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                                     href="/FindDinner"
@@ -145,6 +144,15 @@ export default function Navbar(props) {
                                     <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
                                     Find a Dinner
                                 </a>
+
+                                <a
+                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                                    href="/About"
+                                >
+                                    <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
+                                    About
+                                </a>
+
                                 {/*<a*/}
                                 {/*    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"*/}
                                 {/*    href="/Profile"*/}

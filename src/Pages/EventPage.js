@@ -60,7 +60,7 @@ export default function EventPage() {
                                     <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                                         <div className="py-6 px-3 mt-32 sm:mt-0">
                                              <button>
-                                                 <Link to="/JoinEvent" className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>
+                                                 <Link to="JoinEvent" className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"> Join</Link>
 
                       </button>
 

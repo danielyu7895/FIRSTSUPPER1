@@ -24,6 +24,8 @@ import ScrollToTop from "./Components/ScrollToTop.js";
 import History from "./Pages/History"
 import Login from "./newPages/Login";
 import Host from "./Pages/Host";
+import Settings from "./Pages/Settings";
+import About from "./Pages/About";
 import Register from "./newPages/Register";
 
 function App() {
@@ -37,10 +39,11 @@ function App() {
                 <Route path='/SignUpForm' component={SignUpForm} />
                 <Route path='/SignUpForm2' component={SignUpForm2} />
                 <Route path='/Profile' component={Profile} />
-                {/*<Route path='/Settings' component={EventPage} />*/}
                 {/*<Route path='/YourEvents' component={YourEvents} />*/}
                 <Route path= '/Login' component={Login} />
+                <Route path= '/Settings' component={Settings}/>
                 <Route path= '/Register' component={Register} />
+                <Route path= '/About' component={About} />
 
                 <Route path= '/Host' component={Host} />
                 <Route path='/FindDinner' component={YourEvents} />
