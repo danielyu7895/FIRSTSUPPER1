@@ -66,7 +66,7 @@ class UploadImg extends Component {
             return (
                 <div>
                     <br />
-\                </div>
+               </div>
             );
         }
     };

@@ -1,7 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { auth, signInWithEmailAndPassword } from "../firebase";
+import { useAuthState } from "react-firebase-hooks/auth";
+
+
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+// eslint-disable-next-line
+  const [user, loading, error] = useAuthState(auth);
+  const navigate = useHistory();
+  useEffect(() => {
+    if (loading) {
+      // maybe trigger a loading screen
+      return;
+    }
+    if (user) navigate.push("/");
+  }, [user, loading]);
+
+
   return (
     <>
       <div className="container mx-auto px-4 h-full mt-login">
@@ -14,36 +32,10 @@ export default function Login() {
                     Sign in with your First Supper account
                   </h6>
                 </div>
-                {/*<div className="btn-wrapper text-center">*/}
-                {/*  <button*/}
-                {/*    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"*/}
-                {/*    type="button"*/}
-                {/*  >*/}
-                {/*    <img*/}
-                {/*      alt="..."*/}
-                {/*      className="w-5 mr-1"*/}
-                {/*      // src={require("assets/img/github.svg").default}*/}
-                {/*    />*/}
-                {/*    Github*/}
-                {/*  </button>*/}
-                {/*  <button*/}
-                {/*    className="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"*/}
-                {/*    type="button"*/}
-                {/*  >*/}
-                {/*    <img*/}
-                {/*      alt="..."*/}
-                {/*      className="w-5 mr-1"*/}
-                {/*      // src={require("assets/img/google.svg").default}*/}
-                {/*    />*/}
-                {/*    Google*/}
-                {/*  </button>*/}
-                {/*</div>*/}
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
-                {/*<div className="text-blueGray-400 text-center mb-3 font-bold">*/}
-                {/*  <small>Or sign in with credentials</small>*/}
-                {/*</div>*/}
+
                 <form>
                   <div className="relative w-full mb-3">
                     <label
@@ -53,9 +45,12 @@ export default function Login() {
                       Email
                     </label>
                     <input
+
                       type="email"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
-                      placeholder="Email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="E-mail Address"
                     />
                   </div>
 
@@ -69,6 +64,8 @@ export default function Login() {
                     <input
                       type="password"
                       className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                       placeholder="Password"
                     />
                   </div>
@@ -87,6 +84,7 @@ export default function Login() {
 
                   <div className="text-center mt-6">
                     <button
+                        onClick={() => signInWithEmailAndPassword(auth,email, password)}
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
                       type="button"
                     >
@@ -118,3 +116,4 @@ export default function Login() {
     </>
   );
 }
+

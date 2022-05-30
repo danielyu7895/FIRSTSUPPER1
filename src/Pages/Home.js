@@ -3,6 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {HashLink} from 'react-router-hash-link';
+import JoinEvent from "../newPages/JoinEvent";
 
 
 function Home() {

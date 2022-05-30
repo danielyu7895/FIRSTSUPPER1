@@ -2,9 +2,30 @@
 import "../Styles/Profile.css"
 import React from "react";
 import Tag from "../Components/Tag.js";
+/* eslint-disable */
+import getName from "../Components/getDetails";
+// import {auth} from "../firebase";
+import {db} from '../firebase';
+import {useAuthState} from "react-firebase-hooks/auth";
+// import firebase from "firebase/compat";
+
+import {auth} from "../firebase"
+
+// const auth = a();
+
+
+
 
 export default function Profile() {
+    const user = auth.currentUser;
+    // if (user !== null) {
+
+
+        const email = user.email;
+        const uid = user.uid;
+    // }
     return (
+
         <>
             {/*<Navbar transparent />*/}
             <main className="profile-page">
@@ -13,6 +34,7 @@ export default function Profile() {
                         className="absolute top-0 w-full h-full bg-center bg-cover"
                         style={{
                             backgroundImage:
+
                                 "url('https://cdn9.dissolve.com/p/D187_257_003/D187_257_003_1200.jpg')",
                         }}
                     >
@@ -41,6 +63,7 @@ export default function Profile() {
                         </svg>
                     </div>
                 </section>
+
                 <section className="relative py-16 bg-blueGray-200">
                     <div className="container mx-auto px-4">
                         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
@@ -62,18 +85,23 @@ export default function Profile() {
                                     <div className="w-full lg:w-4/12 px-4 lg:order-1">
                                         <div className="flex justify-center py-4 lg:pt-4 pt-8">
                                             <div className="mr-4 p-3 text-center">
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="text-center mt-12">
-                                    <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                                        Omer Dahan
+
+
+                                <div className="text-center mt-12" >
+
+                                    <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2" >
+                                        {gender}
                                     </h3>
+
+
+
                                     <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold ">
                                         <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}
-                                        Rehavia, Jerusalem
+                                        {email}
                                     </div>
 
                                     <div className="mb-2 text-blueGray-600">
@@ -86,6 +114,7 @@ export default function Profile() {
                                         <div className="w-full lg:w-9/12 px-4">
                                             <p className="mb-4 font-bold text-lg leading-relaxed text-blueGray-600">
                                                 About Me
+
                                             </p>
                                             <p>
                                                 I'm a professional dancer for over 10 years. When I'm not dancing, I'm Swimming or painting. In addition to all that I'm doing my best trying to be a diligent student.

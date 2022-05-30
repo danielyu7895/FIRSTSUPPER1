@@ -63,10 +63,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Profile.css"
 // components
+import { auth } from "../firebase";
 
 // import IndexDropdown from "./Dropdowns/IndexDropdown";
 import {Avatar} from "@mui/material";
 import ProfileDropdown from "./Dropdowns/ProfileDropdown.js";
+import firebase from "firebase/compat";
+// import auth from "firebase.auth";
 
 
 export default function Navbar(props) {
@@ -100,9 +103,6 @@ export default function Navbar(props) {
                     >
 
                         <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-                            {/*<li className="flex items-center">*/}
-                            {/*    <IndexDropdown />*/}
-                            {/*</li>*/}
 
                             <li className="flex items-center">
                                 <a
@@ -130,12 +130,14 @@ export default function Navbar(props) {
                                 </a>
 
                                 <a
+                                    onClick={() => auth.signOut()}
                                     className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                    href="/Register"
+                                    // href="/Logout"
                                 >
                                     <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
-                                    Register
+                                    Logout
                                 </a>
+
 
                                 <a
                                     className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
@@ -144,15 +146,6 @@ export default function Navbar(props) {
                                     <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
                                     Find a Dinner
                                 </a>
-
-                                <a
-                                    className="hover:text-blueGray-500 text-purple-dark px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                                    href="/About"
-                                >
-                                    <i className="text-blueGray-400 far text-lg leading-lg mr-2" />{" "}
-                                    About
-                                </a>
-
                                 {/*<a*/}
                                 {/*    className="hover:text-blueGray-500 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"*/}
                                 {/*    href="/Profile"*/}

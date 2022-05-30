@@ -1,15 +1,12 @@
 import { initializeApp } from "firebase/app"
-import { getFirestore } from "firebase/firestore"
-import {getAuth} from "firebase/auth"
+import {getAuth, signInWithEmailAndPassword, sendPasswordResetEmail
+, signOut, createUserWithEmailAndPassword} from "firebase/auth"
+// eslint-disable-next-line
+import {getFirestore, query, getDocs, collection, where, addDoc} from "firebase/firestore"
 
-// Import the functions you need from the SDKs you need
+import "firebase/auth"
 
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCgtNC4lsGdkbf7GpUa-qDooqwllSX-TYo",
     authDomain: "first-supper-e5269.firebaseapp.com",
@@ -20,9 +17,56 @@ const firebaseConfig = {
     measurementId: "G-QQDZMRS1P6"
 };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
- export const auth = getAuth(app)
-// const db = getFirestore(app)
-// export {db}
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    const logInWithEmailAndPassword = async (email, password) => {
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+        } catch (err) {
+            console.error(err);
+            alert(err.message);
+        }
+    };
+    const registerWithEmailAndPassword = async (gender,date,name, email, password) => {
+        try {
+            const res = await createUserWithEmailAndPassword(auth, email, password);
+            const user = res.user;
+            await addDoc(collection(db, "users"), {
+                uid: user.uid,
+                name: name,
+                authProvider: "local",
+                email: email,
+                date: date,
+                gender: gender,
+            });
+        } catch (err) {
+            console.error(err);
+            alert(err.message);
+        }
+    };
+
+    const sendPasswordReset = async (email) => {
+        try {
+            await sendPasswordResetEmail(auth, email);
+            alert("Password reset link sent!");
+        } catch (err) {
+            console.error(err);
+            alert(err.message);
+        }
+    };
+    const logout = () => {
+        signOut(auth);
+    };
+    export {
+        auth,
+        db,
+        signInWithEmailAndPassword,
+        logInWithEmailAndPassword,
+        registerWithEmailAndPassword,
+        sendPasswordReset,
+        logout,
+    };
+

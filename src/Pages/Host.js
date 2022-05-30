@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import UploadImg from "../Components/uploadImage";
 import NutritionalLimitations from "../Components/NutritionalLimitations.js";
 
@@ -88,25 +88,6 @@ export default function Host() {
                                             </div>
                                             <div className="mr-4 p-3 text-center">
                                             </div>
-
-
-
-                                            {/* <div className="mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          10
-                        </span>
-                        <span className="text-sm text-blueGray-400">
-                          Photos
-                        </span>
-                      </div>
-                      <div className="lg:mr-4 p-3 text-center">
-                        <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          89
-                        </span>
-                        <span className="text-sm text-blueGray-400">
-                          Comments
-                        </span>
-                      </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -114,22 +95,7 @@ export default function Host() {
                                     <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
                                         Host The Perfect Dinner
                                     </h3>
-                                    {/*<div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">*/}
-                                    {/*    <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "}*/}
-                                    {/*    Sderot Ben Maimon, Rehavia*/}
-                                    {/*</div>*/}
-                                    {/*<div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">*/}
-                                    {/*    /!* <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>{" "} *!/*/}
-                                    {/*    Friday 20/05/22 at 19:00*/}
-                                    {/*</div>*/}
-                                    {/* <div className="mb-2 text-blueGray-600 mt-10">
-                    <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
-                    Solution Manager - Creative Tim Officer
-                  </div> */}
-                                    {/*<div className="text-lg mt-0 leading-normal mb-2 font-regular text-blueGray-400">*/}
-                                    {/*    /!* <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i> *!/*/}
-                                    {/*    Hosted by Amit Lahav*/}
-                                    {/*</div>*/}
+
                                 </div>
 
                                 {/*wide line*/}
@@ -283,7 +249,6 @@ export default function Host() {
                                         <div>
                                             <UploadImg/>
                                         </div>
-
                                         <div>
                                             <form>
                                                 <h3 className="font-bold text-blueGray-600">Any nutritional limitations?</h3>
@@ -291,8 +256,6 @@ export default function Host() {
                                             </form>
                                             <NutritionalLimitations/>
                                         </div>
-
-
                                         <div className="text-center mt-12">
                                             <button className="bg-purple-dark text-white active:bg-purple-dark font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
                                                 Create Event
