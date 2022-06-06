@@ -5,6 +5,8 @@ import "../Styles/Profile.css";
 // Components
 import EventsHeader from "../Components/EventsHeader";
 import EventCard from "../Components/Cards/EventCard";
+import BottomFooter from "../Components/BottomFooter.js";
+
 
 // components
 
@@ -169,7 +171,9 @@ export default function YourEvents() {
         </div>
 
         </div>
-       </div> 
+       </div>
+
+          <BottomFooter/>
       </main>
   );
 }

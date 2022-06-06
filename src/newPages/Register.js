@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-// eslint-disable-next-line
+/* eslint-disable */
+
 import { Link, useHistory } from "react-router-dom";
 import {
   auth,
@@ -13,13 +14,14 @@ export default function Register() {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [gender, setGender] = useState("")
+  const [description, setDescription] = useState("")
   // eslint-disable-next-line
   const [user, loading, error] = useAuthState(auth);
   const history = useHistory();
 
   const register = () => {
     if (!name) alert("Please enter name");
-    registerWithEmailAndPassword(gender, date,name, email, password);
+    registerWithEmailAndPassword(description, gender, date,name, email, password);
   };
 
   useEffect(() => {
@@ -104,6 +106,22 @@ export default function Register() {
                         value={date}
                         onChange={(e) => setDate(e.target.value)}
                         placeholder="Date"
+                        type="email"
+                        className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                    />
+                  </div>
+
+                  <div className="relative w-full mb-3">
+                    <label
+                        className="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                    >
+                      Description
+                    </label>
+                    <input
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                        placeholder="Description"
                         type="email"
                         className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
                     />

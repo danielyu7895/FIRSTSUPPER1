@@ -6,7 +6,6 @@
 
 
 import React, { useState } from "react";
-import "../Pages/modal.css"
 
 function JoinEvent() {
     const [isOpen, setIsOpen] = useState(false);

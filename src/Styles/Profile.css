@@ -1114,6 +1114,16 @@ select {
     }
 }
 
+
+.parent-div {
+
+    text-align: center;
+}
+
+.center {
+    display: inline-block;
+}
+
 .bg-black {
     --tw-bg-opacity: 1;
     background-color: rgba(0, 0, 0, var(--tw-bg-opacity));

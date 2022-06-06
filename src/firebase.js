@@ -30,17 +30,18 @@ const firebaseConfig = {
             alert(err.message);
         }
     };
-    const registerWithEmailAndPassword = async (gender,date,name, email, password) => {
+    const registerWithEmailAndPassword = async (description, gender,date,name, email, password) => {
         try {
             const res = await createUserWithEmailAndPassword(auth, email, password);
             const user = res.user;
             await addDoc(collection(db, "users"), {
                 uid: user.uid,
-                name: name,
+                displayName: name,
                 authProvider: "local",
                 email: email,
                 date: date,
                 gender: gender,
+                description: description,
             });
         } catch (err) {
             console.error(err);
